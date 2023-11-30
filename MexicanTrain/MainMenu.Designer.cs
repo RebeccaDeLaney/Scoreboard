@@ -33,6 +33,7 @@
             this.previousGamesButton = new System.Windows.Forms.Button();
             this.playersButton = new System.Windows.Forms.Button();
             this.mexicanTrainLabel = new System.Windows.Forms.Label();
+            this.connectionTestForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // newGameButton
@@ -85,11 +86,31 @@
             this.mexicanTrainLabel.TabIndex = 4;
             this.mexicanTrainLabel.Text = " ";
             // 
+            // connectionTestForm
+            // 
+            this.connectionTestForm.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.connectionTestForm.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.connectionTestForm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.connectionTestForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
+            this.connectionTestForm.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.connectionTestForm.ForeColor = System.Drawing.Color.Silver;
+            this.connectionTestForm.Location = new System.Drawing.Point(1100, 630);
+            this.connectionTestForm.Margin = new System.Windows.Forms.Padding(0);
+            this.connectionTestForm.Name = "connectionTestForm";
+            this.connectionTestForm.Size = new System.Drawing.Size(150, 40);
+            this.connectionTestForm.TabIndex = 5;
+            this.connectionTestForm.Text = "Test Connection";
+            this.connectionTestForm.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.connectionTestForm.UseVisualStyleBackColor = false;
+            this.connectionTestForm.Click += new System.EventHandler(this.connectionTestForm_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.connectionTestForm);
             this.Controls.Add(this.mexicanTrainLabel);
             this.Controls.Add(this.playersButton);
             this.Controls.Add(this.previousGamesButton);
@@ -108,6 +129,7 @@
         private System.Windows.Forms.Button previousGamesButton;
         private System.Windows.Forms.Button playersButton;
         private System.Windows.Forms.Label mexicanTrainLabel;
+        private System.Windows.Forms.Button connectionTestForm;
     }
 }
 

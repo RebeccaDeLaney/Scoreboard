@@ -31,7 +31,6 @@
             this.MainMenu = new System.Windows.Forms.Button();
             this.previousGamesButton = new System.Windows.Forms.Button();
             this.playersButton = new System.Windows.Forms.Button();
-            this.instructionsButton = new System.Windows.Forms.Button();
             this.rulesButton = new System.Windows.Forms.Button();
             this.player1comboBox = new System.Windows.Forms.ComboBox();
             this.player2comboBox = new System.Windows.Forms.ComboBox();
@@ -190,18 +189,6 @@
             this.playersButton.TabIndex = 2;
             this.playersButton.Text = "Players";
             this.playersButton.UseVisualStyleBackColor = false;
-            // 
-            // instructionsButton
-            // 
-            this.instructionsButton.BackColor = System.Drawing.Color.SaddleBrown;
-            this.instructionsButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instructionsButton.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.instructionsButton.Location = new System.Drawing.Point(96, 111);
-            this.instructionsButton.Name = "instructionsButton";
-            this.instructionsButton.Size = new System.Drawing.Size(150, 40);
-            this.instructionsButton.TabIndex = 3;
-            this.instructionsButton.Text = "Instructions";
-            this.instructionsButton.UseVisualStyleBackColor = false;
             // 
             // rulesButton
             // 
@@ -1436,6 +1423,7 @@
             // MTGame
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pictureBox14);
@@ -1545,7 +1533,6 @@
             this.Controls.Add(this.player2comboBox);
             this.Controls.Add(this.player1comboBox);
             this.Controls.Add(this.rulesButton);
-            this.Controls.Add(this.instructionsButton);
             this.Controls.Add(this.playersButton);
             this.Controls.Add(this.previousGamesButton);
             this.Controls.Add(this.MainMenu);
@@ -1575,7 +1562,6 @@
         private System.Windows.Forms.Button MainMenu;
         private System.Windows.Forms.Button previousGamesButton;
         private System.Windows.Forms.Button playersButton;
-        private System.Windows.Forms.Button instructionsButton;
         private System.Windows.Forms.Button rulesButton;
         private System.Windows.Forms.ComboBox player1comboBox;
         private System.Windows.Forms.ComboBox player2comboBox;

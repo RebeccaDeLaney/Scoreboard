@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MexicanTrain
 {
-    public partial class Players : Form
+    public partial class PlayersForm : Form
     {
-        public Players()
+        public PlayersForm()
         {
             InitializeComponent();
         }

@@ -16,5 +16,12 @@ namespace MexicanTrain
         {
             InitializeComponent();
         }
+
+        private void connectionTestForm_Click(object sender, EventArgs e)
+        {
+            // open connection test form
+            ConnectionTestForm newConnTest = new ConnectionTestForm();
+            newConnTest.Show();
+        }
     }
 }

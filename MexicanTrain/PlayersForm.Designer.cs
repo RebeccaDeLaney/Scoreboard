@@ -1,6 +1,6 @@
 ﻿namespace MexicanTrain
 {
-    partial class Players
+    partial class PlayersForm
     {
         /// <summary>
         /// Required designer variable.
@@ -51,6 +51,7 @@
             this.plyaersComboBox.Size = new System.Drawing.Size(200, 32);
             this.plyaersComboBox.TabIndex = 0;
             this.plyaersComboBox.Text = "Player List";
+            this.plyaersComboBox.Visible = false;
             // 
             // playerNameLabel
             // 
@@ -62,6 +63,7 @@
             this.playerNameLabel.TabIndex = 1;
             this.playerNameLabel.Text = "Player Name";
             this.playerNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.playerNameLabel.Visible = false;
             // 
             // totalGamesLabel
             // 
@@ -74,6 +76,7 @@
             this.totalGamesLabel.TabIndex = 2;
             this.totalGamesLabel.Text = "Total # of Games: ";
             this.totalGamesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.totalGamesLabel.Visible = false;
             // 
             // highestScoreLabel
             // 
@@ -86,6 +89,7 @@
             this.highestScoreLabel.TabIndex = 3;
             this.highestScoreLabel.Text = "Highest Score: ";
             this.highestScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.highestScoreLabel.Visible = false;
             // 
             // lowestScoreLabel
             // 
@@ -98,6 +102,7 @@
             this.lowestScoreLabel.TabIndex = 4;
             this.lowestScoreLabel.Text = "Lowest Score: ";
             this.lowestScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lowestScoreLabel.Visible = false;
             // 
             // numberWinsLabel
             // 
@@ -110,6 +115,7 @@
             this.numberWinsLabel.TabIndex = 5;
             this.numberWinsLabel.Text = "# of Wins: ";
             this.numberWinsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.numberWinsLabel.Visible = false;
             // 
             // label1
             // 
@@ -157,10 +163,11 @@
             this.menuButton.Text = "Menu";
             this.menuButton.UseVisualStyleBackColor = false;
             // 
-            // Players
+            // PlayersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.menuButton);
@@ -173,7 +180,7 @@
             this.Controls.Add(this.totalGamesLabel);
             this.Controls.Add(this.playerNameLabel);
             this.Controls.Add(this.plyaersComboBox);
-            this.Name = "Players";
+            this.Name = "PlayersForm";
             this.Text = "Players";
             this.ResumeLayout(false);
             this.PerformLayout();
