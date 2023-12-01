@@ -48,6 +48,7 @@ namespace MexicanTrain
                     MessageBox.Show(ex.Message);
                 }
             }
+            cnn.Close();
             return tableNames;
         }
 
@@ -55,5 +56,6 @@ namespace MexicanTrain
         {
             this.Close();
         }
+                
     }
 }

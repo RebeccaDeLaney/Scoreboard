@@ -10,15 +10,16 @@ namespace MexicanTrain
     public class Game
     {
         public string GameName { get; set; }
-        public int Rounds { get; set; }
-        public List<Player> Players { get; set; }
+        //public int Rounds { get; set; }
+        //public List<Player> Players { get; set; }
         public DateTime StartTime { get; set; }
+        public string Winner;
         
         public Game(string gameName, int rounds, List<Player> players, DateTime startTime) 
         {
             GameName = gameName;
-            Rounds = rounds;
-            Players = players;
+            //Rounds = rounds;
+            //Players = players;
             StartTime = startTime;
         }
         //class Player

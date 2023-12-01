@@ -157,6 +157,7 @@
             // MainMenu
             // 
             this.MainMenu.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.MainMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MainMenu.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenu.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.MainMenu.Location = new System.Drawing.Point(10, 10);
@@ -169,6 +170,7 @@
             // previousGamesButton
             // 
             this.previousGamesButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.previousGamesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.previousGamesButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previousGamesButton.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.previousGamesButton.Location = new System.Drawing.Point(120, 10);
@@ -181,6 +183,7 @@
             // playersButton
             // 
             this.playersButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.playersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playersButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playersButton.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.playersButton.Location = new System.Drawing.Point(280, 10);
@@ -193,6 +196,7 @@
             // rulesButton
             // 
             this.rulesButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.rulesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rulesButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rulesButton.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.rulesButton.Location = new System.Drawing.Point(96, 170);
@@ -205,6 +209,7 @@
             // player1comboBox
             // 
             this.player1comboBox.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.player1comboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.player1comboBox.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player1comboBox.ForeColor = System.Drawing.Color.DarkRed;
             this.player1comboBox.FormattingEnabled = true;
@@ -217,6 +222,7 @@
             // player2comboBox
             // 
             this.player2comboBox.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.player2comboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.player2comboBox.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player2comboBox.ForeColor = System.Drawing.Color.DarkRed;
             this.player2comboBox.FormattingEnabled = true;
@@ -229,6 +235,7 @@
             // player3comboBox
             // 
             this.player3comboBox.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.player3comboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.player3comboBox.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player3comboBox.ForeColor = System.Drawing.Color.DarkRed;
             this.player3comboBox.FormattingEnabled = true;
@@ -241,6 +248,7 @@
             // player4comboBox
             // 
             this.player4comboBox.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.player4comboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.player4comboBox.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player4comboBox.ForeColor = System.Drawing.Color.DarkRed;
             this.player4comboBox.FormattingEnabled = true;
@@ -253,6 +261,7 @@
             // player5comboBox
             // 
             this.player5comboBox.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.player5comboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.player5comboBox.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player5comboBox.ForeColor = System.Drawing.Color.DarkRed;
             this.player5comboBox.FormattingEnabled = true;
@@ -265,6 +274,7 @@
             // player6comboBox
             // 
             this.player6comboBox.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.player6comboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.player6comboBox.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player6comboBox.ForeColor = System.Drawing.Color.DarkRed;
             this.player6comboBox.FormattingEnabled = true;
@@ -1213,6 +1223,7 @@
             // saveButton
             // 
             this.saveButton.BackColor = System.Drawing.Color.DarkRed;
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.saveButton.Location = new System.Drawing.Point(1072, 620);
@@ -1225,6 +1236,7 @@
             // totalButton
             // 
             this.totalButton.BackColor = System.Drawing.Color.DarkRed;
+            this.totalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.totalButton.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalButton.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.totalButton.Location = new System.Drawing.Point(886, 619);

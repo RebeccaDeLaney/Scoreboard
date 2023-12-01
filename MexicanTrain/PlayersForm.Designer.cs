@@ -51,7 +51,6 @@
             this.plyaersComboBox.Size = new System.Drawing.Size(200, 32);
             this.plyaersComboBox.TabIndex = 0;
             this.plyaersComboBox.Text = "Player List";
-            this.plyaersComboBox.Visible = false;
             // 
             // playerNameLabel
             // 

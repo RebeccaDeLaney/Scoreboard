@@ -36,7 +36,7 @@
             // testBtn
             // 
             this.testBtn.Location = new System.Drawing.Point(164, 119);
-            this.testBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.testBtn.Margin = new System.Windows.Forms.Padding(2);
             this.testBtn.Name = "testBtn";
             this.testBtn.Size = new System.Drawing.Size(75, 31);
             this.testBtn.TabIndex = 0;
@@ -46,9 +46,10 @@
             // 
             // dbNameTB
             // 
-            this.dbNameTB.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbNameTB.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbNameTB.ForeColor = System.Drawing.Color.DimGray;
             this.dbNameTB.Location = new System.Drawing.Point(100, 52);
-            this.dbNameTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dbNameTB.Margin = new System.Windows.Forms.Padding(2);
             this.dbNameTB.Name = "dbNameTB";
             this.dbNameTB.Size = new System.Drawing.Size(202, 27);
             this.dbNameTB.TabIndex = 1;
@@ -72,7 +73,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dbNameTB);
             this.Controls.Add(this.testBtn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ConnectionTestForm";
             this.Text = "ConnectionTestForm";
             this.ResumeLayout(false);

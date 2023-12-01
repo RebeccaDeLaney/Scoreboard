@@ -39,6 +39,7 @@
             // newGameButton
             // 
             this.newGameButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.newGameButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newGameButton.Font = new System.Drawing.Font("Copperplate Gothic Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newGameButton.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.newGameButton.Location = new System.Drawing.Point(540, 250);
@@ -48,10 +49,12 @@
             this.newGameButton.TabIndex = 0;
             this.newGameButton.Text = "New Game";
             this.newGameButton.UseVisualStyleBackColor = false;
+            this.newGameButton.Click += new System.EventHandler(this.newGameButton_Click);
             // 
             // previousGamesButton
             // 
             this.previousGamesButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.previousGamesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.previousGamesButton.Font = new System.Drawing.Font("Copperplate Gothic Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previousGamesButton.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.previousGamesButton.Location = new System.Drawing.Point(540, 320);
@@ -65,6 +68,7 @@
             // playersButton
             // 
             this.playersButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.playersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playersButton.Font = new System.Drawing.Font("Copperplate Gothic Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playersButton.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.playersButton.Location = new System.Drawing.Point(540, 400);
@@ -74,6 +78,7 @@
             this.playersButton.TabIndex = 2;
             this.playersButton.Text = "Players";
             this.playersButton.UseVisualStyleBackColor = false;
+            this.playersButton.Click += new System.EventHandler(this.playersButton_Click);
             // 
             // mexicanTrainLabel
             // 
@@ -90,8 +95,10 @@
             // 
             this.connectionTestForm.BackColor = System.Drawing.Color.DarkSlateGray;
             this.connectionTestForm.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.connectionTestForm.FlatAppearance.BorderSize = 5;
             this.connectionTestForm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
             this.connectionTestForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
+            this.connectionTestForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.connectionTestForm.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.connectionTestForm.ForeColor = System.Drawing.Color.Silver;
             this.connectionTestForm.Location = new System.Drawing.Point(1100, 630);

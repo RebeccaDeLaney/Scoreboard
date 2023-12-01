@@ -15,6 +15,11 @@ namespace MexicanTrain
         public PlayersForm()
         {
             InitializeComponent();
+            List<string> playerList = new List<string>();
+                playerList = DB.GetPlayers();
+                plyaersComboBox.DataSource = playerList;
         }
+
+        
     }
 }

@@ -23,5 +23,19 @@ namespace MexicanTrain
             ConnectionTestForm newConnTest = new ConnectionTestForm();
             newConnTest.Show();
         }
+
+        private void newGameButton_Click(object sender, EventArgs e)
+        {
+            //open new Game Form
+            MTGame newGame = new MTGame();
+            newGame.Show();
+        }
+
+        private void playersButton_Click(object sender, EventArgs e)
+        {
+            //open player screen
+            PlayersForm newPlayers = new PlayersForm();
+            newPlayers.Show();
+        }
     }
 }
