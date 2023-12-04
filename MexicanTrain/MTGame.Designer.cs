@@ -215,7 +215,7 @@
             this.player1comboBox.FormattingEnabled = true;
             this.player1comboBox.Location = new System.Drawing.Point(96, 236);
             this.player1comboBox.Name = "player1comboBox";
-            this.player1comboBox.Size = new System.Drawing.Size(164, 32);
+            this.player1comboBox.Size = new System.Drawing.Size(164, 56);
             this.player1comboBox.TabIndex = 12;
             this.player1comboBox.Text = "Select Player";
             // 
@@ -228,7 +228,7 @@
             this.player2comboBox.FormattingEnabled = true;
             this.player2comboBox.Location = new System.Drawing.Point(96, 296);
             this.player2comboBox.Name = "player2comboBox";
-            this.player2comboBox.Size = new System.Drawing.Size(164, 32);
+            this.player2comboBox.Size = new System.Drawing.Size(164, 56);
             this.player2comboBox.TabIndex = 13;
             this.player2comboBox.Text = "Select Player";
             // 
@@ -241,7 +241,7 @@
             this.player3comboBox.FormattingEnabled = true;
             this.player3comboBox.Location = new System.Drawing.Point(96, 356);
             this.player3comboBox.Name = "player3comboBox";
-            this.player3comboBox.Size = new System.Drawing.Size(164, 32);
+            this.player3comboBox.Size = new System.Drawing.Size(164, 56);
             this.player3comboBox.TabIndex = 14;
             this.player3comboBox.Text = "Select Player";
             // 
@@ -254,7 +254,7 @@
             this.player4comboBox.FormattingEnabled = true;
             this.player4comboBox.Location = new System.Drawing.Point(96, 416);
             this.player4comboBox.Name = "player4comboBox";
-            this.player4comboBox.Size = new System.Drawing.Size(164, 32);
+            this.player4comboBox.Size = new System.Drawing.Size(164, 56);
             this.player4comboBox.TabIndex = 15;
             this.player4comboBox.Text = "Select Player";
             // 
@@ -267,7 +267,7 @@
             this.player5comboBox.FormattingEnabled = true;
             this.player5comboBox.Location = new System.Drawing.Point(96, 476);
             this.player5comboBox.Name = "player5comboBox";
-            this.player5comboBox.Size = new System.Drawing.Size(164, 32);
+            this.player5comboBox.Size = new System.Drawing.Size(164, 56);
             this.player5comboBox.TabIndex = 16;
             this.player5comboBox.Text = "Select Player";
             // 
@@ -280,7 +280,7 @@
             this.player6comboBox.FormattingEnabled = true;
             this.player6comboBox.Location = new System.Drawing.Point(96, 536);
             this.player6comboBox.Name = "player6comboBox";
-            this.player6comboBox.Size = new System.Drawing.Size(164, 32);
+            this.player6comboBox.Size = new System.Drawing.Size(164, 56);
             this.player6comboBox.TabIndex = 17;
             this.player6comboBox.Text = "Select Player";
             // 
@@ -292,7 +292,7 @@
             this.player1round11.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round11.Location = new System.Drawing.Point(336, 236);
             this.player1round11.Name = "player1round11";
-            this.player1round11.Size = new System.Drawing.Size(60, 32);
+            this.player1round11.Size = new System.Drawing.Size(60, 64);
             this.player1round11.TabIndex = 27;
             this.player1round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -304,7 +304,7 @@
             this.player1round10.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round10.Location = new System.Drawing.Point(402, 236);
             this.player1round10.Name = "player1round10";
-            this.player1round10.Size = new System.Drawing.Size(60, 32);
+            this.player1round10.Size = new System.Drawing.Size(60, 64);
             this.player1round10.TabIndex = 28;
             this.player1round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -316,7 +316,7 @@
             this.player1round9.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round9.Location = new System.Drawing.Point(468, 236);
             this.player1round9.Name = "player1round9";
-            this.player1round9.Size = new System.Drawing.Size(60, 32);
+            this.player1round9.Size = new System.Drawing.Size(60, 64);
             this.player1round9.TabIndex = 29;
             this.player1round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -328,7 +328,7 @@
             this.player1round8.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round8.Location = new System.Drawing.Point(534, 236);
             this.player1round8.Name = "player1round8";
-            this.player1round8.Size = new System.Drawing.Size(60, 32);
+            this.player1round8.Size = new System.Drawing.Size(60, 64);
             this.player1round8.TabIndex = 30;
             this.player1round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -340,7 +340,7 @@
             this.player1round7.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round7.Location = new System.Drawing.Point(600, 236);
             this.player1round7.Name = "player1round7";
-            this.player1round7.Size = new System.Drawing.Size(60, 32);
+            this.player1round7.Size = new System.Drawing.Size(60, 64);
             this.player1round7.TabIndex = 31;
             this.player1round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -352,7 +352,7 @@
             this.player1round6.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round6.Location = new System.Drawing.Point(666, 236);
             this.player1round6.Name = "player1round6";
-            this.player1round6.Size = new System.Drawing.Size(60, 32);
+            this.player1round6.Size = new System.Drawing.Size(60, 64);
             this.player1round6.TabIndex = 32;
             this.player1round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -364,7 +364,7 @@
             this.player1round5.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round5.Location = new System.Drawing.Point(732, 236);
             this.player1round5.Name = "player1round5";
-            this.player1round5.Size = new System.Drawing.Size(60, 32);
+            this.player1round5.Size = new System.Drawing.Size(60, 64);
             this.player1round5.TabIndex = 33;
             this.player1round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -376,7 +376,7 @@
             this.player1round4.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round4.Location = new System.Drawing.Point(798, 236);
             this.player1round4.Name = "player1round4";
-            this.player1round4.Size = new System.Drawing.Size(60, 32);
+            this.player1round4.Size = new System.Drawing.Size(60, 64);
             this.player1round4.TabIndex = 34;
             this.player1round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -388,7 +388,7 @@
             this.player1round3.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round3.Location = new System.Drawing.Point(864, 236);
             this.player1round3.Name = "player1round3";
-            this.player1round3.Size = new System.Drawing.Size(60, 32);
+            this.player1round3.Size = new System.Drawing.Size(60, 64);
             this.player1round3.TabIndex = 35;
             this.player1round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -400,7 +400,7 @@
             this.player1round2.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round2.Location = new System.Drawing.Point(930, 236);
             this.player1round2.Name = "player1round2";
-            this.player1round2.Size = new System.Drawing.Size(60, 32);
+            this.player1round2.Size = new System.Drawing.Size(60, 64);
             this.player1round2.TabIndex = 36;
             this.player1round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -412,7 +412,7 @@
             this.player1round1.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round1.Location = new System.Drawing.Point(996, 236);
             this.player1round1.Name = "player1round1";
-            this.player1round1.Size = new System.Drawing.Size(60, 32);
+            this.player1round1.Size = new System.Drawing.Size(60, 64);
             this.player1round1.TabIndex = 37;
             this.player1round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -424,7 +424,7 @@
             this.player1round0.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round0.Location = new System.Drawing.Point(1062, 236);
             this.player1round0.Name = "player1round0";
-            this.player1round0.Size = new System.Drawing.Size(60, 32);
+            this.player1round0.Size = new System.Drawing.Size(60, 64);
             this.player1round0.TabIndex = 38;
             this.player1round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -436,7 +436,7 @@
             this.player1round12.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player1round12.Location = new System.Drawing.Point(270, 236);
             this.player1round12.Name = "player1round12";
-            this.player1round12.Size = new System.Drawing.Size(60, 32);
+            this.player1round12.Size = new System.Drawing.Size(60, 64);
             this.player1round12.TabIndex = 39;
             this.player1round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -448,7 +448,7 @@
             this.player2round12.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round12.Location = new System.Drawing.Point(270, 296);
             this.player2round12.Name = "player2round12";
-            this.player2round12.Size = new System.Drawing.Size(60, 32);
+            this.player2round12.Size = new System.Drawing.Size(60, 64);
             this.player2round12.TabIndex = 40;
             this.player2round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -460,7 +460,7 @@
             this.player2round11.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round11.Location = new System.Drawing.Point(336, 296);
             this.player2round11.Name = "player2round11";
-            this.player2round11.Size = new System.Drawing.Size(60, 32);
+            this.player2round11.Size = new System.Drawing.Size(60, 64);
             this.player2round11.TabIndex = 41;
             this.player2round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -472,7 +472,7 @@
             this.player2round10.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round10.Location = new System.Drawing.Point(402, 296);
             this.player2round10.Name = "player2round10";
-            this.player2round10.Size = new System.Drawing.Size(60, 32);
+            this.player2round10.Size = new System.Drawing.Size(60, 64);
             this.player2round10.TabIndex = 42;
             this.player2round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -484,7 +484,7 @@
             this.player2round9.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round9.Location = new System.Drawing.Point(468, 296);
             this.player2round9.Name = "player2round9";
-            this.player2round9.Size = new System.Drawing.Size(60, 32);
+            this.player2round9.Size = new System.Drawing.Size(60, 64);
             this.player2round9.TabIndex = 43;
             this.player2round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -496,7 +496,7 @@
             this.player2round8.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round8.Location = new System.Drawing.Point(534, 296);
             this.player2round8.Name = "player2round8";
-            this.player2round8.Size = new System.Drawing.Size(60, 32);
+            this.player2round8.Size = new System.Drawing.Size(60, 64);
             this.player2round8.TabIndex = 44;
             this.player2round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -508,7 +508,7 @@
             this.player2round7.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round7.Location = new System.Drawing.Point(600, 296);
             this.player2round7.Name = "player2round7";
-            this.player2round7.Size = new System.Drawing.Size(60, 32);
+            this.player2round7.Size = new System.Drawing.Size(60, 64);
             this.player2round7.TabIndex = 45;
             this.player2round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -520,7 +520,7 @@
             this.player2round6.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round6.Location = new System.Drawing.Point(666, 296);
             this.player2round6.Name = "player2round6";
-            this.player2round6.Size = new System.Drawing.Size(60, 32);
+            this.player2round6.Size = new System.Drawing.Size(60, 64);
             this.player2round6.TabIndex = 46;
             this.player2round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -532,7 +532,7 @@
             this.player2round5.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round5.Location = new System.Drawing.Point(732, 296);
             this.player2round5.Name = "player2round5";
-            this.player2round5.Size = new System.Drawing.Size(60, 32);
+            this.player2round5.Size = new System.Drawing.Size(60, 64);
             this.player2round5.TabIndex = 47;
             this.player2round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -544,7 +544,7 @@
             this.player2round4.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round4.Location = new System.Drawing.Point(798, 296);
             this.player2round4.Name = "player2round4";
-            this.player2round4.Size = new System.Drawing.Size(60, 32);
+            this.player2round4.Size = new System.Drawing.Size(60, 64);
             this.player2round4.TabIndex = 48;
             this.player2round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -556,7 +556,7 @@
             this.player2round3.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round3.Location = new System.Drawing.Point(864, 296);
             this.player2round3.Name = "player2round3";
-            this.player2round3.Size = new System.Drawing.Size(60, 32);
+            this.player2round3.Size = new System.Drawing.Size(60, 64);
             this.player2round3.TabIndex = 49;
             this.player2round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -568,7 +568,7 @@
             this.player2round2.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round2.Location = new System.Drawing.Point(930, 296);
             this.player2round2.Name = "player2round2";
-            this.player2round2.Size = new System.Drawing.Size(60, 32);
+            this.player2round2.Size = new System.Drawing.Size(60, 64);
             this.player2round2.TabIndex = 50;
             this.player2round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -580,7 +580,7 @@
             this.player2round1.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round1.Location = new System.Drawing.Point(996, 296);
             this.player2round1.Name = "player2round1";
-            this.player2round1.Size = new System.Drawing.Size(60, 32);
+            this.player2round1.Size = new System.Drawing.Size(60, 64);
             this.player2round1.TabIndex = 51;
             this.player2round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -592,7 +592,7 @@
             this.player2round0.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player2round0.Location = new System.Drawing.Point(1062, 296);
             this.player2round0.Name = "player2round0";
-            this.player2round0.Size = new System.Drawing.Size(60, 32);
+            this.player2round0.Size = new System.Drawing.Size(60, 64);
             this.player2round0.TabIndex = 52;
             this.player2round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -604,7 +604,7 @@
             this.player3round12.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round12.Location = new System.Drawing.Point(270, 356);
             this.player3round12.Name = "player3round12";
-            this.player3round12.Size = new System.Drawing.Size(60, 32);
+            this.player3round12.Size = new System.Drawing.Size(60, 64);
             this.player3round12.TabIndex = 53;
             this.player3round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -616,7 +616,7 @@
             this.player3round11.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round11.Location = new System.Drawing.Point(336, 356);
             this.player3round11.Name = "player3round11";
-            this.player3round11.Size = new System.Drawing.Size(60, 32);
+            this.player3round11.Size = new System.Drawing.Size(60, 64);
             this.player3round11.TabIndex = 54;
             this.player3round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -628,7 +628,7 @@
             this.player3round10.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round10.Location = new System.Drawing.Point(402, 356);
             this.player3round10.Name = "player3round10";
-            this.player3round10.Size = new System.Drawing.Size(60, 32);
+            this.player3round10.Size = new System.Drawing.Size(60, 64);
             this.player3round10.TabIndex = 55;
             this.player3round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -640,7 +640,7 @@
             this.player3round9.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round9.Location = new System.Drawing.Point(468, 356);
             this.player3round9.Name = "player3round9";
-            this.player3round9.Size = new System.Drawing.Size(60, 32);
+            this.player3round9.Size = new System.Drawing.Size(60, 64);
             this.player3round9.TabIndex = 56;
             this.player3round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -652,7 +652,7 @@
             this.player3round8.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round8.Location = new System.Drawing.Point(534, 356);
             this.player3round8.Name = "player3round8";
-            this.player3round8.Size = new System.Drawing.Size(60, 32);
+            this.player3round8.Size = new System.Drawing.Size(60, 64);
             this.player3round8.TabIndex = 57;
             this.player3round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -664,7 +664,7 @@
             this.player3round7.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round7.Location = new System.Drawing.Point(600, 356);
             this.player3round7.Name = "player3round7";
-            this.player3round7.Size = new System.Drawing.Size(60, 32);
+            this.player3round7.Size = new System.Drawing.Size(60, 64);
             this.player3round7.TabIndex = 58;
             this.player3round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -676,7 +676,7 @@
             this.player3round6.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round6.Location = new System.Drawing.Point(666, 356);
             this.player3round6.Name = "player3round6";
-            this.player3round6.Size = new System.Drawing.Size(60, 32);
+            this.player3round6.Size = new System.Drawing.Size(60, 64);
             this.player3round6.TabIndex = 59;
             this.player3round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -688,7 +688,7 @@
             this.player3round5.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round5.Location = new System.Drawing.Point(732, 356);
             this.player3round5.Name = "player3round5";
-            this.player3round5.Size = new System.Drawing.Size(60, 32);
+            this.player3round5.Size = new System.Drawing.Size(60, 64);
             this.player3round5.TabIndex = 60;
             this.player3round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -700,7 +700,7 @@
             this.player3round4.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round4.Location = new System.Drawing.Point(798, 356);
             this.player3round4.Name = "player3round4";
-            this.player3round4.Size = new System.Drawing.Size(60, 32);
+            this.player3round4.Size = new System.Drawing.Size(60, 64);
             this.player3round4.TabIndex = 61;
             this.player3round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -712,7 +712,7 @@
             this.player3round3.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round3.Location = new System.Drawing.Point(864, 356);
             this.player3round3.Name = "player3round3";
-            this.player3round3.Size = new System.Drawing.Size(60, 32);
+            this.player3round3.Size = new System.Drawing.Size(60, 64);
             this.player3round3.TabIndex = 62;
             this.player3round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -724,7 +724,7 @@
             this.player3round2.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round2.Location = new System.Drawing.Point(930, 356);
             this.player3round2.Name = "player3round2";
-            this.player3round2.Size = new System.Drawing.Size(60, 32);
+            this.player3round2.Size = new System.Drawing.Size(60, 64);
             this.player3round2.TabIndex = 63;
             this.player3round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -736,7 +736,7 @@
             this.player3round1.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round1.Location = new System.Drawing.Point(996, 356);
             this.player3round1.Name = "player3round1";
-            this.player3round1.Size = new System.Drawing.Size(60, 32);
+            this.player3round1.Size = new System.Drawing.Size(60, 64);
             this.player3round1.TabIndex = 64;
             this.player3round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -748,7 +748,7 @@
             this.player3round0.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player3round0.Location = new System.Drawing.Point(1062, 356);
             this.player3round0.Name = "player3round0";
-            this.player3round0.Size = new System.Drawing.Size(60, 32);
+            this.player3round0.Size = new System.Drawing.Size(60, 64);
             this.player3round0.TabIndex = 65;
             this.player3round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -760,7 +760,7 @@
             this.player4round12.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round12.Location = new System.Drawing.Point(270, 416);
             this.player4round12.Name = "player4round12";
-            this.player4round12.Size = new System.Drawing.Size(60, 32);
+            this.player4round12.Size = new System.Drawing.Size(60, 64);
             this.player4round12.TabIndex = 66;
             this.player4round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -772,7 +772,7 @@
             this.player4round11.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round11.Location = new System.Drawing.Point(336, 416);
             this.player4round11.Name = "player4round11";
-            this.player4round11.Size = new System.Drawing.Size(60, 32);
+            this.player4round11.Size = new System.Drawing.Size(60, 64);
             this.player4round11.TabIndex = 67;
             this.player4round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -784,7 +784,7 @@
             this.player4round10.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round10.Location = new System.Drawing.Point(402, 416);
             this.player4round10.Name = "player4round10";
-            this.player4round10.Size = new System.Drawing.Size(60, 32);
+            this.player4round10.Size = new System.Drawing.Size(60, 64);
             this.player4round10.TabIndex = 68;
             this.player4round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -796,7 +796,7 @@
             this.player4round9.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round9.Location = new System.Drawing.Point(468, 416);
             this.player4round9.Name = "player4round9";
-            this.player4round9.Size = new System.Drawing.Size(60, 32);
+            this.player4round9.Size = new System.Drawing.Size(60, 64);
             this.player4round9.TabIndex = 69;
             this.player4round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -808,7 +808,7 @@
             this.player4round8.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round8.Location = new System.Drawing.Point(534, 416);
             this.player4round8.Name = "player4round8";
-            this.player4round8.Size = new System.Drawing.Size(60, 32);
+            this.player4round8.Size = new System.Drawing.Size(60, 64);
             this.player4round8.TabIndex = 70;
             this.player4round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -820,7 +820,7 @@
             this.player4round7.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round7.Location = new System.Drawing.Point(600, 416);
             this.player4round7.Name = "player4round7";
-            this.player4round7.Size = new System.Drawing.Size(60, 32);
+            this.player4round7.Size = new System.Drawing.Size(60, 64);
             this.player4round7.TabIndex = 71;
             this.player4round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -832,7 +832,7 @@
             this.player4round6.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round6.Location = new System.Drawing.Point(666, 416);
             this.player4round6.Name = "player4round6";
-            this.player4round6.Size = new System.Drawing.Size(60, 32);
+            this.player4round6.Size = new System.Drawing.Size(60, 64);
             this.player4round6.TabIndex = 72;
             this.player4round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -844,7 +844,7 @@
             this.player4round5.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round5.Location = new System.Drawing.Point(732, 416);
             this.player4round5.Name = "player4round5";
-            this.player4round5.Size = new System.Drawing.Size(60, 32);
+            this.player4round5.Size = new System.Drawing.Size(60, 64);
             this.player4round5.TabIndex = 73;
             this.player4round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -856,7 +856,7 @@
             this.player4round4.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round4.Location = new System.Drawing.Point(798, 416);
             this.player4round4.Name = "player4round4";
-            this.player4round4.Size = new System.Drawing.Size(60, 32);
+            this.player4round4.Size = new System.Drawing.Size(60, 64);
             this.player4round4.TabIndex = 74;
             this.player4round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -868,7 +868,7 @@
             this.player4round3.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round3.Location = new System.Drawing.Point(864, 416);
             this.player4round3.Name = "player4round3";
-            this.player4round3.Size = new System.Drawing.Size(60, 32);
+            this.player4round3.Size = new System.Drawing.Size(60, 64);
             this.player4round3.TabIndex = 75;
             this.player4round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -880,7 +880,7 @@
             this.player4round2.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round2.Location = new System.Drawing.Point(930, 416);
             this.player4round2.Name = "player4round2";
-            this.player4round2.Size = new System.Drawing.Size(60, 32);
+            this.player4round2.Size = new System.Drawing.Size(60, 64);
             this.player4round2.TabIndex = 76;
             this.player4round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -892,7 +892,7 @@
             this.player4round1.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round1.Location = new System.Drawing.Point(996, 416);
             this.player4round1.Name = "player4round1";
-            this.player4round1.Size = new System.Drawing.Size(60, 32);
+            this.player4round1.Size = new System.Drawing.Size(60, 64);
             this.player4round1.TabIndex = 77;
             this.player4round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -904,7 +904,7 @@
             this.player4round0.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player4round0.Location = new System.Drawing.Point(1062, 416);
             this.player4round0.Name = "player4round0";
-            this.player4round0.Size = new System.Drawing.Size(60, 32);
+            this.player4round0.Size = new System.Drawing.Size(60, 64);
             this.player4round0.TabIndex = 78;
             this.player4round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -916,7 +916,7 @@
             this.player5round12.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round12.Location = new System.Drawing.Point(270, 476);
             this.player5round12.Name = "player5round12";
-            this.player5round12.Size = new System.Drawing.Size(60, 32);
+            this.player5round12.Size = new System.Drawing.Size(60, 64);
             this.player5round12.TabIndex = 79;
             this.player5round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -928,7 +928,7 @@
             this.player5round11.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round11.Location = new System.Drawing.Point(336, 476);
             this.player5round11.Name = "player5round11";
-            this.player5round11.Size = new System.Drawing.Size(60, 32);
+            this.player5round11.Size = new System.Drawing.Size(60, 64);
             this.player5round11.TabIndex = 80;
             this.player5round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -940,7 +940,7 @@
             this.player5round10.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round10.Location = new System.Drawing.Point(402, 476);
             this.player5round10.Name = "player5round10";
-            this.player5round10.Size = new System.Drawing.Size(60, 32);
+            this.player5round10.Size = new System.Drawing.Size(60, 64);
             this.player5round10.TabIndex = 81;
             this.player5round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -952,7 +952,7 @@
             this.player5round9.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round9.Location = new System.Drawing.Point(468, 476);
             this.player5round9.Name = "player5round9";
-            this.player5round9.Size = new System.Drawing.Size(60, 32);
+            this.player5round9.Size = new System.Drawing.Size(60, 64);
             this.player5round9.TabIndex = 82;
             this.player5round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -964,7 +964,7 @@
             this.player5round8.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round8.Location = new System.Drawing.Point(534, 476);
             this.player5round8.Name = "player5round8";
-            this.player5round8.Size = new System.Drawing.Size(60, 32);
+            this.player5round8.Size = new System.Drawing.Size(60, 64);
             this.player5round8.TabIndex = 83;
             this.player5round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -976,7 +976,7 @@
             this.player5round7.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round7.Location = new System.Drawing.Point(600, 476);
             this.player5round7.Name = "player5round7";
-            this.player5round7.Size = new System.Drawing.Size(60, 32);
+            this.player5round7.Size = new System.Drawing.Size(60, 64);
             this.player5round7.TabIndex = 84;
             this.player5round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -988,7 +988,7 @@
             this.player5round6.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round6.Location = new System.Drawing.Point(666, 476);
             this.player5round6.Name = "player5round6";
-            this.player5round6.Size = new System.Drawing.Size(60, 32);
+            this.player5round6.Size = new System.Drawing.Size(60, 64);
             this.player5round6.TabIndex = 85;
             this.player5round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1000,7 +1000,7 @@
             this.player5round5.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round5.Location = new System.Drawing.Point(732, 476);
             this.player5round5.Name = "player5round5";
-            this.player5round5.Size = new System.Drawing.Size(60, 32);
+            this.player5round5.Size = new System.Drawing.Size(60, 64);
             this.player5round5.TabIndex = 86;
             this.player5round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1012,7 +1012,7 @@
             this.player5round4.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round4.Location = new System.Drawing.Point(798, 476);
             this.player5round4.Name = "player5round4";
-            this.player5round4.Size = new System.Drawing.Size(60, 32);
+            this.player5round4.Size = new System.Drawing.Size(60, 64);
             this.player5round4.TabIndex = 87;
             this.player5round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1024,7 +1024,7 @@
             this.player5round3.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round3.Location = new System.Drawing.Point(864, 476);
             this.player5round3.Name = "player5round3";
-            this.player5round3.Size = new System.Drawing.Size(60, 32);
+            this.player5round3.Size = new System.Drawing.Size(60, 64);
             this.player5round3.TabIndex = 88;
             this.player5round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1036,7 +1036,7 @@
             this.player5round2.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round2.Location = new System.Drawing.Point(930, 476);
             this.player5round2.Name = "player5round2";
-            this.player5round2.Size = new System.Drawing.Size(60, 32);
+            this.player5round2.Size = new System.Drawing.Size(60, 64);
             this.player5round2.TabIndex = 89;
             this.player5round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1048,7 +1048,7 @@
             this.player5round1.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round1.Location = new System.Drawing.Point(996, 476);
             this.player5round1.Name = "player5round1";
-            this.player5round1.Size = new System.Drawing.Size(60, 32);
+            this.player5round1.Size = new System.Drawing.Size(60, 64);
             this.player5round1.TabIndex = 90;
             this.player5round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1060,7 +1060,7 @@
             this.player5round0.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player5round0.Location = new System.Drawing.Point(1062, 476);
             this.player5round0.Name = "player5round0";
-            this.player5round0.Size = new System.Drawing.Size(60, 32);
+            this.player5round0.Size = new System.Drawing.Size(60, 64);
             this.player5round0.TabIndex = 91;
             this.player5round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1072,7 +1072,7 @@
             this.player6round12.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round12.Location = new System.Drawing.Point(270, 536);
             this.player6round12.Name = "player6round12";
-            this.player6round12.Size = new System.Drawing.Size(60, 32);
+            this.player6round12.Size = new System.Drawing.Size(60, 64);
             this.player6round12.TabIndex = 92;
             this.player6round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1084,7 +1084,7 @@
             this.player6round11.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round11.Location = new System.Drawing.Point(336, 536);
             this.player6round11.Name = "player6round11";
-            this.player6round11.Size = new System.Drawing.Size(60, 32);
+            this.player6round11.Size = new System.Drawing.Size(60, 64);
             this.player6round11.TabIndex = 93;
             this.player6round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1096,7 +1096,7 @@
             this.player6round10.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round10.Location = new System.Drawing.Point(402, 536);
             this.player6round10.Name = "player6round10";
-            this.player6round10.Size = new System.Drawing.Size(60, 32);
+            this.player6round10.Size = new System.Drawing.Size(60, 64);
             this.player6round10.TabIndex = 94;
             this.player6round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1108,7 +1108,7 @@
             this.player6round9.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round9.Location = new System.Drawing.Point(468, 536);
             this.player6round9.Name = "player6round9";
-            this.player6round9.Size = new System.Drawing.Size(60, 32);
+            this.player6round9.Size = new System.Drawing.Size(60, 64);
             this.player6round9.TabIndex = 95;
             this.player6round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1120,7 +1120,7 @@
             this.player6round8.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round8.Location = new System.Drawing.Point(534, 536);
             this.player6round8.Name = "player6round8";
-            this.player6round8.Size = new System.Drawing.Size(60, 32);
+            this.player6round8.Size = new System.Drawing.Size(60, 64);
             this.player6round8.TabIndex = 96;
             this.player6round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1132,7 +1132,7 @@
             this.player6round7.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round7.Location = new System.Drawing.Point(600, 536);
             this.player6round7.Name = "player6round7";
-            this.player6round7.Size = new System.Drawing.Size(60, 32);
+            this.player6round7.Size = new System.Drawing.Size(60, 64);
             this.player6round7.TabIndex = 97;
             this.player6round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1144,7 +1144,7 @@
             this.player6round6.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round6.Location = new System.Drawing.Point(666, 536);
             this.player6round6.Name = "player6round6";
-            this.player6round6.Size = new System.Drawing.Size(60, 32);
+            this.player6round6.Size = new System.Drawing.Size(60, 64);
             this.player6round6.TabIndex = 98;
             this.player6round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1156,7 +1156,7 @@
             this.player6round5.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round5.Location = new System.Drawing.Point(732, 536);
             this.player6round5.Name = "player6round5";
-            this.player6round5.Size = new System.Drawing.Size(60, 32);
+            this.player6round5.Size = new System.Drawing.Size(60, 64);
             this.player6round5.TabIndex = 99;
             this.player6round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1168,7 +1168,7 @@
             this.player6round4.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round4.Location = new System.Drawing.Point(798, 536);
             this.player6round4.Name = "player6round4";
-            this.player6round4.Size = new System.Drawing.Size(60, 32);
+            this.player6round4.Size = new System.Drawing.Size(60, 64);
             this.player6round4.TabIndex = 100;
             this.player6round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1180,7 +1180,7 @@
             this.player6round3.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round3.Location = new System.Drawing.Point(864, 536);
             this.player6round3.Name = "player6round3";
-            this.player6round3.Size = new System.Drawing.Size(60, 32);
+            this.player6round3.Size = new System.Drawing.Size(60, 64);
             this.player6round3.TabIndex = 101;
             this.player6round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1192,7 +1192,7 @@
             this.player6round2.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round2.Location = new System.Drawing.Point(930, 536);
             this.player6round2.Name = "player6round2";
-            this.player6round2.Size = new System.Drawing.Size(60, 32);
+            this.player6round2.Size = new System.Drawing.Size(60, 64);
             this.player6round2.TabIndex = 102;
             this.player6round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1204,7 +1204,7 @@
             this.player6round1.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round1.Location = new System.Drawing.Point(996, 536);
             this.player6round1.Name = "player6round1";
-            this.player6round1.Size = new System.Drawing.Size(60, 32);
+            this.player6round1.Size = new System.Drawing.Size(60, 64);
             this.player6round1.TabIndex = 103;
             this.player6round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1216,7 +1216,7 @@
             this.player6round0.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.player6round0.Location = new System.Drawing.Point(1062, 536);
             this.player6round0.Name = "player6round0";
-            this.player6round0.Size = new System.Drawing.Size(60, 32);
+            this.player6round0.Size = new System.Drawing.Size(60, 64);
             this.player6round0.TabIndex = 104;
             this.player6round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1245,6 +1245,7 @@
             this.totalButton.TabIndex = 106;
             this.totalButton.Text = "Totals";
             this.totalButton.UseVisualStyleBackColor = false;
+            this.totalButton.Click += new System.EventHandler(this.totalButton_Click);
             // 
             // player1total
             // 

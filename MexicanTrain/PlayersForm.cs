@@ -20,6 +20,10 @@ namespace MexicanTrain
                 plyaersComboBox.DataSource = playerList;
         }
 
-        
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+        }
     }
 }
