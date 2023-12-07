@@ -34,8 +34,8 @@ namespace MexicanTrain
         private void playersButton_Click(object sender, EventArgs e)
         {
             //open player screen
-            PlayersForm newPlayersForm = new PlayersForm();
-            newPlayersForm.Show();
+            PlayersForm newPlayers = new PlayersForm();
+            newPlayers.Show();
         }
     }
 }

@@ -41,7 +41,7 @@
             this.gameDateComboBox.FormattingEnabled = true;
             this.gameDateComboBox.Location = new System.Drawing.Point(80, 150);
             this.gameDateComboBox.Name = "gameDateComboBox";
-            this.gameDateComboBox.Size = new System.Drawing.Size(225, 56);
+            this.gameDateComboBox.Size = new System.Drawing.Size(225, 32);
             this.gameDateComboBox.TabIndex = 0;
             this.gameDateComboBox.Text = "Date List";
             // 
@@ -56,7 +56,6 @@
             this.menuButton.TabIndex = 10;
             this.menuButton.Text = "Menu";
             this.menuButton.UseVisualStyleBackColor = false;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // gameDateLabel
             // 
@@ -78,7 +77,7 @@
             // 
             // MTPreviousGames
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(26F, 48F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
