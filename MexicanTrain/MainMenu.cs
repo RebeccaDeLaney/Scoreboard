@@ -28,7 +28,7 @@ namespace MexicanTrain
         {
             //open new Game Form
             MTGame newGame = new MTGame();
-            newGame.Show();
+            newGame.Show();            
         }
 
         private void playersButton_Click(object sender, EventArgs e)
@@ -36,6 +36,18 @@ namespace MexicanTrain
             //open player screen
             PlayersForm newPlayers = new PlayersForm();
             newPlayers.Show();
+        }
+
+        private void previousGamesButton_Click(object sender, EventArgs e)
+        {
+            MTPreviousGames previousGamesForm = new MTPreviousGames();
+            previousGamesForm.Show();
+        }
+
+        private void previousGamesButton_Click(object sender, EventArgs e)
+        {
+            MTPreviousGames previousGamesForm = new MTPreviousGames();
+            previousGamesForm.Show();
         }
     }
 }

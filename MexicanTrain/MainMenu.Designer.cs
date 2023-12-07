@@ -64,6 +64,7 @@
             this.previousGamesButton.TabIndex = 1;
             this.previousGamesButton.Text = "Previous Games";
             this.previousGamesButton.UseVisualStyleBackColor = false;
+            this.previousGamesButton.Click += new System.EventHandler(this.previousGamesButton_Click);
             // 
             // playersButton
             // 

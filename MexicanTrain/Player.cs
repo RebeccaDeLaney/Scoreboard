@@ -10,8 +10,10 @@ namespace MexicanTrain
     //A class to represent a player and their scores
     public class Player
     {
-        public string name { get; set; }
-        public int[] roundScores { get; set; }
+        private string emptyName = "";
+        public string name { get { return emptyName; } set { emptyName = ""; } }
+        private int[] scores;
+        public int[] roundScores {  get { return scores; } set { scores = new int[13] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; } }
 
         //A constructor method
         public Player(string name, int[] roundScores)
