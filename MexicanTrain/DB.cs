@@ -43,16 +43,18 @@ namespace MexicanTrain
             cnn.Close();
             return playerList;
 
-             public static List<string> DateList()
+        public static List<string> DateList()
         {
+            SqlDataReader dataReader;
+
             SqlConnection cnn;
-            cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters3"));
+            cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
             cnn.Open();
-            List<string> game_date = new List<string>();
+            List<string> game_dateList = new List<string>();
 
             string dateListQuery = "select game_session from GameSessions";
             SqlCommand cmd = new SqlCommand(dateListQuery, cnn);
-            SqlDataReader reader= cmd.ExecuteReader();
+            dataReader= cmd.ExecuteReader();
             while (dataReader.Read())
             {
                 try
@@ -63,10 +65,9 @@ namespace MexicanTrain
                 {
                     Console.WriteLine(ex.Message);
                 }
-                cnn.Close();
-                return game_date;
             }
-
+            cnn.Close();
+            return game_dateList;
         }
 
         //public List<MTGame> GetGames()
