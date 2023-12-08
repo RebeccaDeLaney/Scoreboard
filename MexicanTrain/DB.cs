@@ -56,8 +56,7 @@ namespace MexicanTrain
             cnn = new SqlConnection(CnnHelper.CnnVal("GameMaster"));
             cnn.Open();
             string gameDate = game.StartTime.ToLongDateString();
-            string gameWinner = game.Winner;
-            string insertGameQuery = "insert into Session (game_date, game_winner) values ('" + gameDate + "', '" + gameWinner + "');";
+            string insertGameQuery = "insert into Session (game_date) values ('" + gameDate + "');";
             SqlCommand cmd = new SqlCommand(insertGameQuery, cnn);
             cnn.Close();
         }
