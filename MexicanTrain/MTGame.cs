@@ -72,7 +72,7 @@ namespace MexicanTrain
         {
             try
             {
-               player1.roundScores[12] = Int32.Parse(player1round12.Text);
+               Player1.roundScores[12] = Int32.Parse(player1round12.Text);
             }
             catch (Exception ex)
             {
@@ -83,7 +83,7 @@ namespace MexicanTrain
         public void player1round11_TextChanged(object sender, EventArgs e)
         {   try
             {
-            player1.roundScores[11] = Int32.Parse(player1round11.Text);
+                Player1.roundScores[11] = Int32.Parse(player1round11.Text);
             }
              catch (Exception ex)
             {
@@ -93,7 +93,7 @@ namespace MexicanTrain
         public void player1round10_TextChanged(object sender, EventArgs e)
         {   try
             {
-            player1.roundScores[10] = Int32.Parse(player1round10.Text);
+                Player1.roundScores[10] = Int32.Parse(player1round10.Text);
             }
              catch (Exception ex)
             {
@@ -103,7 +103,7 @@ namespace MexicanTrain
         public void player1round9_TextChanged(object sender, EventArgs e)
         {   try
             {
-            player1.roundScores[9] = Int32.Parse(player1round9.Text);
+                Player1.roundScores[9] = Int32.Parse(player1round9.Text);
             }
             catch (Exception ex)
             {
@@ -113,7 +113,7 @@ namespace MexicanTrain
         public void player1round8_TextChanged(object sender, EventArgs e)
         {   try
             {
-            player1.roundScores[8] = Int32.Parse(player1round8.Text);
+                Player1.roundScores[8] = Int32.Parse(player1round8.Text);
             }
              catch (Exception ex)
             {
@@ -123,7 +123,7 @@ namespace MexicanTrain
         public void player1round7_TextChanged(object sender, EventArgs e)
         {   try
             {
-            player1.roundScores[7] = Int32.Parse(player1round7.Text);
+                Player1.roundScores[7] = Int32.Parse(player1round7.Text);
             }
              catch (Exception ex)
             {
@@ -133,7 +133,7 @@ namespace MexicanTrain
         public void player1round6_TextChanged(object sender, EventArgs e)
         {   try
             {
-            player1.roundScores[6] = Int32.Parse(player1round6.Text);
+                Player1.roundScores[6] = Int32.Parse(player1round6.Text);
             }
              catch (Exception ex)
             {
@@ -143,7 +143,7 @@ namespace MexicanTrain
         public void player1round5_TextChanged(object sender, EventArgs e)
         {   try
             {
-            player1.roundScores[5] = Int32.Parse(player1round5.Text);
+                Player1.roundScores[5] = Int32.Parse(player1round5.Text);
             }
              catch (Exception ex)
             {
@@ -154,7 +154,7 @@ namespace MexicanTrain
         {    
             try
             {
-            player1.roundScores[4] = Int32.Parse(player1round4.Text);
+                Player1.roundScores[4] = Int32.Parse(player1round4.Text);
             }
              catch (Exception ex)
             {
@@ -165,7 +165,7 @@ namespace MexicanTrain
         {
             try
             {
-            player1.roundScores[3] = Int32.Parse(player1round3.Text);
+                Player1.roundScores[3] = Int32.Parse(player1round3.Text);
             }
              catch (Exception ex)
             {
@@ -176,7 +176,7 @@ namespace MexicanTrain
         {
             try
             {
-            player1.roundScores[2] = Int32.Parse(player1round2.Text);
+                Player1.roundScores[2] = Int32.Parse(player1round2.Text);
             }
              catch (Exception ex)
             {
@@ -187,7 +187,7 @@ namespace MexicanTrain
         {
             try
             {
-            player1.roundScores[1] = Int32.Parse(player1round1.Text);
+                Player1.roundScores[1] = Int32.Parse(player1round1.Text);
             }
              catch (Exception ex)
             {
@@ -198,7 +198,7 @@ namespace MexicanTrain
         {
             try
             {
-            player1.roundScores[0] = Int32.Parse(player1round0.Text);
+                Player1.roundScores[0] = Int32.Parse(player1round0.Text);
             }
              catch (Exception ex)
             {
@@ -209,7 +209,7 @@ namespace MexicanTrain
         {
             try
             {
-            player2.roundScores[12] = Int32.Parse(player2round12.Text);
+                Player2.roundScores[12] = Int32.Parse(player2round12.Text);
             }
              catch (Exception ex)
             {
@@ -220,7 +220,7 @@ namespace MexicanTrain
         {
             try
             {
-            player2.roundScores[11] = Int32.Parse(player2round11.Text);
+                Player2.roundScores[11] = Int32.Parse(player2round11.Text);
             }
              catch (Exception ex)
             {
@@ -231,7 +231,7 @@ namespace MexicanTrain
         {
             try
             {
-            player2.roundScores[10] = Int32.Parse(player2round10.Text);
+                Player2.roundScores[10] = Int32.Parse(player2round10.Text);
             }
              catch (Exception ex)
             {
@@ -242,7 +242,7 @@ namespace MexicanTrain
         {
             try
             {
-            player2.roundScores[9] = Int32.Parse(player2round9.Text);
+                Player2.roundScores[9] = Int32.Parse(player2round9.Text);
             }
             catch (Exception ex)
             {
@@ -253,7 +253,7 @@ namespace MexicanTrain
         {   
             try
             {
-            player2.roundScores[8] = Int32.Parse(player2round8.Text);
+                Player2.roundScores[8] = Int32.Parse(player2round8.Text);
             }
              catch (Exception ex)
             {
@@ -264,7 +264,7 @@ namespace MexicanTrain
         {
             try
             {
-            player2.roundScores[7] = Int32.Parse(player2round7.Text);
+                Player2.roundScores[7] = Int32.Parse(player2round7.Text);
             }
              catch (Exception ex)
             {
@@ -275,7 +275,7 @@ namespace MexicanTrain
         {
             try
             {
-            player2.roundScores[6] = Int32.Parse(player2round6.Text);
+                Player2.roundScores[6] = Int32.Parse(player2round6.Text);
             }
              catch (Exception ex)
             {
@@ -286,7 +286,7 @@ namespace MexicanTrain
         {   
             try
             {
-            player2.roundScores[5] = Int32.Parse(player2round5.Text);
+                Player2.roundScores[5] = Int32.Parse(player2round5.Text);
             }
              catch (Exception ex)
             {
@@ -297,7 +297,7 @@ namespace MexicanTrain
         {
             try
             {
-            player2.roundScores[4] = Int32.Parse(player2round4.Text);
+                Player2.roundScores[4] = Int32.Parse(player2round4.Text);
             }
              catch (Exception ex)
             {
@@ -307,7 +307,7 @@ namespace MexicanTrain
         public void player2round3_TextChanged(object sender, EventArgs e)
         {   try
             {
-            player2.roundScores[3] = Int32.Parse(player2round3.Text);
+                Player2.roundScores[3] = Int32.Parse(player2round3.Text);
             }
              catch (Exception ex)
             {
@@ -318,7 +318,7 @@ namespace MexicanTrain
         {
             try
             {
-            player2.roundScores[2] = Int32.Parse(player2round2.Text);
+                Player2.roundScores[2] = Int32.Parse(player2round2.Text);
             }
              catch (Exception ex)
             {
@@ -329,7 +329,7 @@ namespace MexicanTrain
         { 
             try
             {
-            player2.roundScores[1] = Int32.Parse(player2round1.Text);
+                Player2.roundScores[1] = Int32.Parse(player2round1.Text);
             }
              catch (Exception ex)
             {
@@ -340,7 +340,7 @@ namespace MexicanTrain
         {
             try
             {
-            player2.roundScores[0] = Int32.Parse(player2round0.Text);
+                Player2.roundScores[0] = Int32.Parse(player2round0.Text);
             }
              catch (Exception ex)
             {
@@ -351,7 +351,7 @@ namespace MexicanTrain
         {
             try
             {
-            player3.roundScores[12] = Int32.Parse(player3round12.Text);
+                Player3.roundScores[12] = Int32.Parse(player3round12.Text);
             }
              catch (Exception ex)
             {
@@ -362,7 +362,7 @@ namespace MexicanTrain
         {
             try
             {
-            player3.roundScores[11] = Int32.Parse(player3round11.Text);
+                Player3.roundScores[11] = Int32.Parse(player3round11.Text);
             }
              catch (Exception ex)
             {
@@ -373,7 +373,7 @@ namespace MexicanTrain
         {
             try
             {
-            player3.roundScores[10] = Int32.Parse(player3round10.Text);
+                Player3.roundScores[10] = Int32.Parse(player3round10.Text);
             }
              catch (Exception ex)
             {
@@ -384,7 +384,7 @@ namespace MexicanTrain
         {  
             try
             {
-            player3.roundScores[9] = Int32.Parse(player3round9.Text);
+                Player3.roundScores[9] = Int32.Parse(player3round9.Text);
             }
              catch (Exception ex)
             {
@@ -395,7 +395,7 @@ namespace MexicanTrain
         {
             try
             {
-            player3.roundScores[8] = Int32.Parse(player3round8.Text);
+                Player3.roundScores[8] = Int32.Parse(player3round8.Text);
             }
              catch (Exception ex)
             {
@@ -406,7 +406,7 @@ namespace MexicanTrain
         {
             try
             {
-            player3.roundScores[7] = Int32.Parse(player3round7.Text);
+                Player3.roundScores[7] = Int32.Parse(player3round7.Text);
             }
              catch (Exception ex)
             {
@@ -417,7 +417,7 @@ namespace MexicanTrain
         {
             try
             {
-            player3.roundScores[6] = Int32.Parse(player3round6.Text);
+                Player3.roundScores[6] = Int32.Parse(player3round6.Text);
             }
              catch (Exception ex)
             {
@@ -427,7 +427,7 @@ namespace MexicanTrain
         public void player3round5_TextChanged(object sender, EventArgs e)
         {   try
             {
-            player3.roundScores[5] = Int32.Parse(player3round5.Text);
+                Player3.roundScores[5] = Int32.Parse(player3round5.Text);
             }
              catch (Exception ex)
             {
@@ -438,7 +438,7 @@ namespace MexicanTrain
         {
             try
             {
-            player3.roundScores[4] = Int32.Parse(player3round4.Text);
+                Player3.roundScores[4] = Int32.Parse(player3round4.Text);
             }
              catch (Exception ex)
             {
@@ -448,7 +448,7 @@ namespace MexicanTrain
         public void player3round3_TextChanged(object sender, EventArgs e)
         {   try
             {
-            player3.roundScores[3] = Int32.Parse(player3round3.Text);
+                Player3.roundScores[3] = Int32.Parse(player3round3.Text);
             }
              catch (Exception ex)
             {
@@ -459,7 +459,7 @@ namespace MexicanTrain
         {
             try
             {
-            player3.roundScores[2] = Int32.Parse(player3round2.Text);
+                Player3.roundScores[2] = Int32.Parse(player3round2.Text);
             }
              catch (Exception ex)
             {
@@ -470,9 +470,9 @@ namespace MexicanTrain
         {
             try
             {
-             player3.roundScores[1] = Int32.Parse(player3round1.Text);
-            {
-             catch (Exception ex)
+                Player3.roundScores[1] = Int32.Parse(player3round1.Text);
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
@@ -482,7 +482,7 @@ namespace MexicanTrain
         {
             try
             {
-            player3.roundScores[0] = Int32.Parse(player3round0.Text);
+                Player3.roundScores[0] = Int32.Parse(player3round0.Text);
             }
              catch (Exception ex)
             {
@@ -493,7 +493,7 @@ namespace MexicanTrain
         {
             try
             {
-            player4.roundScores[12] = Int32.Parse(player4round12.Text);
+                Player4.roundScores[12] = Int32.Parse(player4round12.Text);
             }
              catch (Exception ex)
             {
@@ -503,7 +503,7 @@ namespace MexicanTrain
         public void player4round11_TextChanged(object sender, EventArgs e)
         {   try
             {
-              player4.roundScores[11] = Int32.Parse(player4round11.Text);
+              Player4.roundScores[11] = Int32.Parse(player4round11.Text);
             }
              catch (Exception ex)
             {
@@ -515,7 +515,7 @@ namespace MexicanTrain
         {
             try
             {
-               player4.roundScores[10] = Int32.Parse(player4round10.Text);
+               Player4.roundScores[10] = Int32.Parse(player4round10.Text);
             }
              catch (Exception ex)
             {
@@ -526,7 +526,7 @@ namespace MexicanTrain
         {
             try
             {
-               player4.roundScores[9] = Int32.Parse(player4round9.Text);
+               Player4.roundScores[9] = Int32.Parse(player4round9.Text);
             }
              catch (Exception ex)
             {
@@ -538,7 +538,7 @@ namespace MexicanTrain
         {
             try
             {
-            player4.roundScores[8] = Int32.Parse(player4round8.Text);
+                Player4.roundScores[8] = Int32.Parse(player4round8.Text);
             }
              catch (Exception ex)
             {
@@ -548,8 +548,8 @@ namespace MexicanTrain
         public void player4round7_TextChanged(object sender, EventArgs e)
         {
             try
-            }
-            player4.roundScores[7] = Int32.Parse(player4round7.Text);
+            { 
+                Player4.roundScores[7] = Int32.Parse(player4round7.Text);
             }
              catch (Exception ex)
             {
@@ -560,75 +560,75 @@ namespace MexicanTrain
         {
           try
           {
-            player4.roundScores[6] = Int32.Parse(player4round6.Text);
-           }
-            catch (Exception ex)
-            {
+                Player4.roundScores[6] = Int32.Parse(player4round6.Text);
+          }
+          catch (Exception ex)
+          {
                 Console.WriteLine(ex.Message);
-            }   
+          }   
         }
         public void player4round5_TextChanged(object sender, EventArgs e)
         {  
-          try
-           {
-             player4.roundScores[5] = Int32.Parse(player4round5.Text);
+            try
+            {
+                Player4.roundScores[5] = Int32.Parse(player4round5.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
         }
         public void player4round4_TextChanged(object sender, EventArgs e)
         {
-           try
-           {
-            player4.roundScores[4] = Int32.Parse(player4round4.Text);
+            try
+            {
+                Player4.roundScores[4] = Int32.Parse(player4round4.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
         }
         public void player4round3_TextChanged(object sender, EventArgs e)
         {
-           try
-           {
-            player4.roundScores[3] = Int32.Parse(player4round3.Text);
+            try
+            {
+                Player4.roundScores[3] = Int32.Parse(player4round3.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
         }
         public void player4round2_TextChanged(object sender, EventArgs e)
         {
-          try
-           {
-             player4.roundScores[2] = Int32.Parse(player4round2.Text);
+            try
+            {
+                Player4.roundScores[2] = Int32.Parse(player4round2.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
         }
         public void player4round1_TextChanged(object sender, EventArgs e)
         {
-           try
-           {
-            player4.roundScores[1] = Int32.Parse(player4round1.Text);
+            try
+            {
+                Player4.roundScores[1] = Int32.Parse(player4round1.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
         }
         public void player4round0_TextChanged(object sender, EventArgs e)
         {
-           try
-           {
-              player4.roundScores[0] = Int32.Parse(player4round0.Text);
+            try
+            {
+                Player4.roundScores[0] = Int32.Parse(player4round0.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
@@ -637,25 +637,29 @@ namespace MexicanTrain
         {
             try
             {
-              player5.roundScores[12] = Int32.Parse(player5round12.Text);
+                Player5.roundScores[12] = Int32.Parse(player5round12.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
         }
         public void player5round11_TextChanged(object sender, EventArgs e)
         {
-           try
-           {
-             player5.roundScores[11] = Int32.Parse(player5round11.Text);
+            try
+            {
+                Player5.roundScores[11] = Int32.Parse(player5round11.Text);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message) ;
             }
         }
         public void player5round10_TextChanged(object sender, EventArgs e)
         {
             try
             {
-            player5.roundScores[10] = Int32.Parse(player5round10.Text);
+                Player5.roundScores[10] = Int32.Parse(player5round10.Text);
             }
              catch (Exception ex)
             {
@@ -666,20 +670,20 @@ namespace MexicanTrain
         {
             try
             {
-            player5.roundScores[9] = Int32.Parse(player5round9.Text);
+                Player5.roundScores[9] = Int32.Parse(player5round9.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
         }
         public void player5round8_TextChanged(object sender, EventArgs e)
         {
-           try
-           {
-            player5.roundScores[8] = Int32.Parse(player5round8.Text);
+            try
+            {
+                Player5.roundScores[8] = Int32.Parse(player5round8.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
@@ -687,15 +691,19 @@ namespace MexicanTrain
         public void player5round7_TextChanged(object sender, EventArgs e)
         {  
            try
-            {
-              player5.roundScores[7] = Int32.Parse(player5round7.Text);
-             } 
+           {
+              Player5.roundScores[7] = Int32.Parse(player5round7.Text);
+           }
+           catch (Exception ex)
+           {
+                Console.WriteLine(ex.Message);
+           }
         }
         public void player5round6_TextChanged(object sender, EventArgs e)
         {
           try
           {
-            player5.roundScores[6] = Int32.Parse(player5round6.Text);
+            Player5.roundScores[6] = Int32.Parse(player5round6.Text);
            }
             catch (Exception ex)
             {
@@ -706,7 +714,7 @@ namespace MexicanTrain
         {
            try
            {
-            player5.roundScores[5] = Int32.Parse(player5round5.Text);
+            Player5.roundScores[5] = Int32.Parse(player5round5.Text);
             }
              catch (Exception ex)
             {
@@ -717,7 +725,7 @@ namespace MexicanTrain
         {
            try
             {
-             player5.roundScores[4] = Int32.Parse(player5round4.Text);
+             Player5.roundScores[4] = Int32.Parse(player5round4.Text);
             }
              catch (Exception ex)
             {
@@ -728,7 +736,7 @@ namespace MexicanTrain
         { 
            try
            {
-            player5.roundScores[3] = Int32.Parse(player5round3.Text);
+            Player5.roundScores[3] = Int32.Parse(player5round3.Text);
            }
             catch (Exception ex)
             {
@@ -739,7 +747,7 @@ namespace MexicanTrain
         {
            try
            {
-            player5.roundScores[2] = Int32.Parse(player5round2.Text);
+            Player5.roundScores[2] = Int32.Parse(player5round2.Text);
             }
              catch (Exception ex)
             {
@@ -750,7 +758,7 @@ namespace MexicanTrain
         {
            try
            {
-            player5.roundScores[1] = Int32.Parse(player5round1.Text);
+            Player5.roundScores[1] = Int32.Parse(player5round1.Text);
             }
              catch (Exception ex)
             {
@@ -761,7 +769,7 @@ namespace MexicanTrain
         {
            try
            {
-            player5.roundScores[0] = Int32.Parse(player5round0.Text);
+            Player5.roundScores[0] = Int32.Parse(player5round0.Text);
             }
              catch (Exception ex)
             {
@@ -772,7 +780,7 @@ namespace MexicanTrain
         {
            try
            {
-            player6.roundScores[12] = Int32.Parse(player6round12.Text);
+            Player6.roundScores[12] = Int32.Parse(player6round12.Text);
             }
              catch (Exception ex)
             {
@@ -783,7 +791,7 @@ namespace MexicanTrain
         {
            try
            {
-            player6.roundScores[11] = Int32.Parse(player6round11.Text);
+            Player6.roundScores[11] = Int32.Parse(player6round11.Text);
             }
              catch (Exception ex)
             {
@@ -794,7 +802,7 @@ namespace MexicanTrain
         {
           try
           {
-            player6.roundScores[10] = Int32.Parse(player6round10.Text);
+            Player6.roundScores[10] = Int32.Parse(player6round10.Text);
           }
            catch (Exception ex)
             {
@@ -805,7 +813,7 @@ namespace MexicanTrain
         {
           try
           {
-            player6.roundScores[9] = Int32.Parse(player6round9.Text);
+            Player6.roundScores[9] = Int32.Parse(player6round9.Text);
            }
             catch (Exception ex)
             {
@@ -816,7 +824,7 @@ namespace MexicanTrain
         {   
            try
            {
-            player6.roundScores[8] = Int32.Parse(player6round8.Text);
+            Player6.roundScores[8] = Int32.Parse(player6round8.Text);
             }
              catch (Exception ex)
             {
@@ -827,7 +835,7 @@ namespace MexicanTrain
         {
            try
            {
-             player6.roundScores[7] = Int32.Parse(player6round7.Text);
+             Player6.roundScores[7] = Int32.Parse(player6round7.Text);
             }
              catch (Exception ex)
             {
@@ -838,7 +846,7 @@ namespace MexicanTrain
         {
           try
           {
-            player6.roundScores[6] = Int32.Parse(player6round6.Text);
+            Player6.roundScores[6] = Int32.Parse(player6round6.Text);
            }
             catch (Exception ex)
             {
@@ -849,7 +857,7 @@ namespace MexicanTrain
         {
            try
            {
-            player6.roundScores[5] = Int32.Parse(player6round5.Text);
+            Player6.roundScores[5] = Int32.Parse(player6round5.Text);
             }
              catch (Exception ex)
             {
@@ -860,7 +868,7 @@ namespace MexicanTrain
         {  
            try
            {
-            player6.roundScores[4] = Int32.Parse(player6round4.Text);
+            Player6.roundScores[4] = Int32.Parse(player6round4.Text);
             }
              catch (Exception ex)
             {
@@ -871,7 +879,7 @@ namespace MexicanTrain
         { 
             try
             {
-            player6.roundScores[3] = Int32.Parse(player6round3.Text);
+            Player6.roundScores[3] = Int32.Parse(player6round3.Text);
             }
              catch (Exception ex)
             {
@@ -883,7 +891,7 @@ namespace MexicanTrain
         { 
            try
            {
-            player6.roundScores[2] = Int32.Parse(player6round2.Text);
+            Player6.roundScores[2] = Int32.Parse(player6round2.Text);
             }
              catch (Exception ex)
             {
@@ -894,7 +902,7 @@ namespace MexicanTrain
         {
           try
           {
-            player6.roundScores[1] = Int32.Parse(player6round1.Text);
+            Player6.roundScores[1] = Int32.Parse(player6round1.Text);
            }
             catch (Exception ex)
             {
@@ -906,7 +914,7 @@ namespace MexicanTrain
         {
            try
            {
-            player6.roundScores[0] = Int32.Parse(player6round0.Text);
+            Player6.roundScores[0] = Int32.Parse(player6round0.Text);
             }
              catch (Exception ex)
             {
@@ -921,16 +929,16 @@ namespace MexicanTrain
                 player1total.Text = (Player1.ScoreTotal()).ToString();
                 player2total.Text = (Player2.ScoreTotal()).ToString();
                 player3total.Text = (Player3.ScoreTotal()).ToString();
-                player4total.Text = (player4.ScoreTotal()).ToString();
-                player5total.Text = (player5.ScoreTotal()).ToString();
-                player6total.Text = (player6.ScoreTotal()).ToString();
+                player4total.Text = (Player4.ScoreTotal()).ToString();
+                player5total.Text = (Player5.ScoreTotal()).ToString();
+                player6total.Text = (Player6.ScoreTotal()).ToString();
 
                 if ((Player1.roundScores[0] != 0) ||
                     (Player2.roundScores[0] != 0) ||
                     (Player3.roundScores[0] != 0) ||
-                    (player4.roundScores[0] != 0) ||
-                    (player5.roundScores[0] != 0) ||
-                    (player6.roundScores[0] != 0))
+                    (Player4.roundScores[0] != 0) ||
+                    (Player5.roundScores[0] != 0) ||
+                    (Player6.roundScores[0] != 0))
                 {
                     List<Player> playerList = new List<Player>
                     {
