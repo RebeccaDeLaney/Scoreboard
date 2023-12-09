@@ -15,6 +15,11 @@ namespace MexicanTrain
         public MTPreviousGames()
         {
             InitializeComponent();
+            List<string> gameList = new List<string>();
+            gameList = DB.DateList();
+            gameDateComboBox.DataSource = gameList;
         }
+
+        
     }
 }

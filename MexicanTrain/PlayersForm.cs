@@ -20,6 +20,5 @@ namespace MexicanTrain
                 plyaersComboBox.DataSource = playerList;
         }
 
-        
     }
 }

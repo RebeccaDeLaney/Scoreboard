@@ -33,196 +33,211 @@ namespace MexicanTrain
             player4comboBox.DataSource = player4list;
             player5comboBox.DataSource = player5list;
             player6comboBox.DataSource = player6list;
+            
                        
         }
 
-        public Player player1 { get; set; }
-        public Player player2 { get; set; }
-        public Player player3 { get; set; }
-        public Player player4 { get; set; }
-        public Player player5 { get; set; }
-        public Player player6 { get; set; }
+        public Player Player1 { get; set; }
+        public Player Player2 { get; set; }
+        public Player Player3 { get; set; }
+        public Player Player4 { get; set; }
+        public Player Player5 { get; set; }
+        public Player Player6 { get; set; }
         private void player1comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            player1.name = player1comboBox.SelectedText;
+            Player1.name = player1comboBox.SelectedText;
         }
         private void player2comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            player2.name = player2comboBox.SelectedText;
+            Player2.name = player2comboBox.SelectedText;
         }
         private void player3comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            player3.name = player3comboBox.SelectedText;
+            Player3.name = player3comboBox.SelectedText;
         }
         private void player4comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            player4.name = player4comboBox.SelectedText;
+            Player4.name = player4comboBox.SelectedText;
         }
         private void player5comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            player5.name = player5comboBox.SelectedText;
+            Player5.name = player5comboBox.SelectedText;
         }
         private void player6comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            player6.name = player6comboBox.SelectedText;
+            Player6.name = player6comboBox.SelectedText;
         }
 
         public void player1round12_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[12] = Int32.Parse(player1round12.Text);
+            try
+            {
+                Player1.roundScores[12] = Int32.Parse(player1round12.Text);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         public void player1round11_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[11] = Int32.Parse(player1round11.Text);
+            try
+            { 
+            Player1.roundScores[11] = Int32.Parse(player1round11.Text);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
         public void player1round10_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[10] = Int32.Parse(player1round10.Text);
+            Player1.roundScores[10] = Int32.Parse(player1round10.Text);
         }
         public void player1round9_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[9] = Int32.Parse(player1round9.Text);
+            Player1.roundScores[9] = Int32.Parse(player1round9.Text);
         }
         public void player1round8_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[8] = Int32.Parse(player1round8.Text);
+            Player1.roundScores[8] = Int32.Parse(player1round8.Text);
         }
         public void player1round7_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[7] = Int32.Parse(player1round7.Text);
+            Player1.roundScores[7] = Int32.Parse(player1round7.Text);
         }
         public void player1round6_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[6] = Int32.Parse(player1round6.Text);
+            Player1.roundScores[6] = Int32.Parse(player1round6.Text);
         }
         public void player1round5_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[5] = Int32.Parse(player1round5.Text);
+            Player1.roundScores[5] = Int32.Parse(player1round5.Text);
         }
         public void player1round4_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[4] = Int32.Parse(player1round4.Text);
+            Player1.roundScores[4] = Int32.Parse(player1round4.Text);
         }
         public void player1round3_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[3] = Int32.Parse(player1round3.Text);
+            Player1.roundScores[3] = Int32.Parse(player1round3.Text);
         }
         public void player1round2_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[2] = Int32.Parse(player1round2.Text);
+            Player1.roundScores[2] = Int32.Parse(player1round2.Text);
         }
         public void player1round1_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[1] = Int32.Parse(player1round1.Text);
+            Player1.roundScores[1] = Int32.Parse(player1round1.Text);
         }
         public void player1round0_TextChanged(object sender, EventArgs e)
         {
-            player1.roundScores[0] = Int32.Parse(player1round0.Text);
+            Player1.roundScores[0] = Int32.Parse(player1round0.Text);
         }
         public void player2round12_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[12] = Int32.Parse(player2round12.Text);
+            Player2.roundScores[12] = Int32.Parse(player2round12.Text);
         }
         public void player2round11_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[11] = Int32.Parse(player2round11.Text);
+            Player2.roundScores[11] = Int32.Parse(player2round11.Text);
         }
         public void player2round10_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[10] = Int32.Parse(player2round10.Text);
+            Player2.roundScores[10] = Int32.Parse(player2round10.Text);
         }
         public void player2round9_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[9] = Int32.Parse(player2round9.Text);
+            Player2.roundScores[9] = Int32.Parse(player2round9.Text);
         }
         public void player2round8_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[8] = Int32.Parse(player2round8.Text);
+            Player2.roundScores[8] = Int32.Parse(player2round8.Text);
         }
         public void player2round7_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[7] = Int32.Parse(player2round7.Text);
+            Player2.roundScores[7] = Int32.Parse(player2round7.Text);
         }
         public void player2round6_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[6] = Int32.Parse(player2round6.Text);
+            Player2.roundScores[6] = Int32.Parse(player2round6.Text);
         }
         public void player2round5_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[5] = Int32.Parse(player2round5.Text);
+            Player2.roundScores[5] = Int32.Parse(player2round5.Text);
         }
         public void player2round4_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[4] = Int32.Parse(player2round4.Text);
+            Player2.roundScores[4] = Int32.Parse(player2round4.Text);
         }
         public void player2round3_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[3] = Int32.Parse(player2round3.Text);
+            Player2.roundScores[3] = Int32.Parse(player2round3.Text);
         }
         public void player2round2_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[2] = Int32.Parse(player2round2.Text);
+            Player2.roundScores[2] = Int32.Parse(player2round2.Text);
         }
         public void player2round1_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[1] = Int32.Parse(player2round1.Text);
+            Player2.roundScores[1] = Int32.Parse(player2round1.Text);
         }
         public void player2round0_TextChanged(object sender, EventArgs e)
         {
-            player2.roundScores[0] = Int32.Parse(player2round0.Text);
+            Player2.roundScores[0] = Int32.Parse(player2round0.Text);
         }
         public void player3round12_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[12] = Int32.Parse(player3round12.Text);
+            Player3.roundScores[12] = Int32.Parse(player3round12.Text);
         }
         public void player3round11_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[11] = Int32.Parse(player3round11.Text);
+            Player3.roundScores[11] = Int32.Parse(player3round11.Text);
         }
         public void player3round10_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[10] = Int32.Parse(player3round10.Text);
+            Player3.roundScores[10] = Int32.Parse(player3round10.Text);
         }
         public void player3round9_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[9] = Int32.Parse(player3round9.Text);
+            Player3.roundScores[9] = Int32.Parse(player3round9.Text);
         }
         public void player3round8_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[8] = Int32.Parse(player3round8.Text);
+            Player3.roundScores[8] = Int32.Parse(player3round8.Text);
         }
         public void player3round7_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[7] = Int32.Parse(player3round7.Text);
+            Player3.roundScores[7] = Int32.Parse(player3round7.Text);
         }
         public void player3round6_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[6] = Int32.Parse(player3round6.Text);
+            Player3.roundScores[6] = Int32.Parse(player3round6.Text);
         }
         public void player3round5_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[5] = Int32.Parse(player3round5.Text);
+            Player3.roundScores[5] = Int32.Parse(player3round5.Text);
         }
         public void player3round4_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[4] = Int32.Parse(player3round4.Text);
+            Player3.roundScores[4] = Int32.Parse(player3round4.Text);
         }
         public void player3round3_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[3] = Int32.Parse(player3round3.Text);
+            Player3.roundScores[3] = Int32.Parse(player3round3.Text);
         }
         public void player3round2_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[2] = Int32.Parse(player3round2.Text);
+            Player3.roundScores[2] = Int32.Parse(player3round2.Text);
         }
         public void player3round1_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[1] = Int32.Parse(player3round1.Text);
+            Player3.roundScores[1] = Int32.Parse(player3round1.Text);
         }
         public void player3round0_TextChanged(object sender, EventArgs e)
         {
-            player3.roundScores[0] = Int32.Parse(player3round0.Text);
+            Player3.roundScores[0] = Int32.Parse(player3round0.Text);
         }
         public void player4round12_TextChanged(object sender, EventArgs e)
         {
@@ -382,32 +397,42 @@ namespace MexicanTrain
         }
         private void totalButton_Click(object sender, EventArgs e)
         {
-            player1total.Text = (player1.ScoreTotal()).ToString();
-            player2total.Text = (player2.ScoreTotal()).ToString();
-            player3total.Text = (player3.ScoreTotal()).ToString();
-            player4total.Text = (player4.ScoreTotal()).ToString();
-            player5total.Text = (player5.ScoreTotal()).ToString();
-            player6total.Text = (player6.ScoreTotal()).ToString();
-
-            if ((player1.roundScores[0] != 0) || 
-                (player2.roundScores[0] != 0) || 
-                (player3.roundScores[0] != 0) || 
-                (player4.roundScores[0] != 0) || 
-                (player5.roundScores[0] != 0) || 
-                (player6.roundScores[0] != 0))
+            try
             {
-                List<Player> playerList = new List<Player>();
-                playerList.Add(player1);
-                playerList.Add(player2);
-                playerList.Add(player3);
-                playerList.Add(player4);
-                playerList.Add(player5);
-                playerList.Add(player6);
+                
+                player1total.Text = (Player1.ScoreTotal()).ToString();
+                player2total.Text = (Player2.ScoreTotal()).ToString();
+                player3total.Text = (Player3.ScoreTotal()).ToString();
+                player4total.Text = (player4.ScoreTotal()).ToString();
+                player5total.Text = (player5.ScoreTotal()).ToString();
+                player6total.Text = (player6.ScoreTotal()).ToString();
 
-                Player winner = Game.DetermineWinner(playerList);
+                if ((Player1.roundScores[0] != 0) ||
+                    (Player2.roundScores[0] != 0) ||
+                    (Player3.roundScores[0] != 0) ||
+                    (player4.roundScores[0] != 0) ||
+                    (player5.roundScores[0] != 0) ||
+                    (player6.roundScores[0] != 0))
+                {
+                    List<Player> playerList = new List<Player>
+                    {
+                        Player1,
+                        Player2,
+                        Player3,
+                        Player4,
+                        Player5,
+                        Player6
+                    };
 
-                winnerLabel.Text = "Winner : " + winner.name;
-                winnerLabel.Visible = true;
+                    Player winner = Game.DetermineWinner(playerList);
+
+                    winnerLabel.Text = "Winner : " + winner.name;
+                    winnerLabel.Visible = true;
+                }
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.Message);
             }
         }
 

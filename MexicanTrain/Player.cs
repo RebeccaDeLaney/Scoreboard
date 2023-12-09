@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -10,12 +11,16 @@ namespace MexicanTrain
     //A class to represent a player and their scores
     public class Player
     {
-        private string emptyName = "";
-        public string name { get { return emptyName; } set { emptyName = ""; } }
-        private int[] scores;
-        public int[] roundScores {  get { return scores; } set { scores = new int[13] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; } }
 
-        //A constructor method
+        public string name;
+        public int[] roundScores;
+
+        public Player()
+        {
+            this.name = "unknown";
+            this.roundScores = new int[13] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        }
+        //A constructor method that is called with parameters
         public Player(string name, int[] roundScores)
         {
             this.name = name;

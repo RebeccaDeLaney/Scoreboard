@@ -44,10 +44,5 @@ namespace MexicanTrain
             previousGamesForm.Show();
         }
 
-        private void previousGamesButton_Click(object sender, EventArgs e)
-        {
-            MTPreviousGames previousGamesForm = new MTPreviousGames();
-            previousGamesForm.Show();
-        }
     }
 }
