@@ -84,21 +84,36 @@ namespace MexicanTrain
                 SqlConnection cnn;
                 cnn = new SqlConnection(CnnHelper.CnnVal("GameMaster"));
                 cnn.Open();
+                string newPlayer = player_name;
+                string newPlayerQuery = "insert into  [Players] player_name values ('" + player_name + "')";
                 cnn.Close();    
             } else
             {
                 MessageBox.Show("This name is invalid");
             }
         }
-        public static void SaveGame(Game game, List<Player> playerList)
+        public static void SaveGame(Game game, Player player1, Player player2, Player player3, Player player4, Player player5, Player player6)
         {
             SqlConnection cnn;
             cnn = new SqlConnection(CnnHelper.CnnVal("GameMaster"));
             cnn.Open();
-            DateTime gameDate = game.StartTime;
-            string insertGameQuery = "insert into Session (game_date) values ('" + gameDate + "');";
+            DateTime gameDate = game.startTime;
+            string player1name = player1.name;
+            string player2name = player2.name;
+            string player3name = player3.name;
+            string player4name = player4.name;
+            string player5name = player5.name;
+            string player6name = player6.name;
+            int player1score = player1.ScoreTotal();
+            int player2score = player2.ScoreTotal();
+            int player3score = player3.ScoreTotal();
+            int player4score = player4.ScoreTotal();
+            int player5score = player5.ScoreTotal();
+            int player6score = player6.ScoreTotal();
+            string insertGameQuery = "insert into [Game Session] (game_date) values ('" + gameDate + "');";
             SqlCommand cmd = new SqlCommand(insertGameQuery, cnn);
-
+            string insertPlayer1Score = "intsert into [Scoring1] values ";
+            SqlCommand cmd2 = new SqlCommand(insertPlayer1Score, cnn);
             cnn.Close();
         }
     }

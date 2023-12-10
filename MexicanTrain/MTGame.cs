@@ -43,7 +43,7 @@ namespace MexicanTrain
         public Player Player4 = new Player();
         public Player Player5 = new Player();
         public Player Player6 = new Player();
-        public Game Game { get; set; }
+        public Game Game = new Game();
         private void player1comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             Player1.name = player1comboBox.SelectedText;

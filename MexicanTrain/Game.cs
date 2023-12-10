@@ -9,17 +9,17 @@ namespace MexicanTrain
 {
     public class Game
     {
-        public string GameName { get; set; }
-        //public int Rounds { get; set; }
-        //public List<Player> Players { get; set; }
-        public DateTime StartTime { get; set; }
-        
-        public Game(string gameName, DateTime startTime) 
+        public Game() 
         {
-            GameName = gameName;
-            StartTime = startTime;
+            this.StartTime = DateTime.Now;
         }
         
+        private DateTime StartTime = DateTime.Now;
+        public DateTime startTime 
+            { 
+                get { return this.StartTime; } 
+                set { this.StartTime = value; } 
+            }
             public static Player DetermineWinner(List<Player> players)
         {
             //Determine the winner based on the lowest score
