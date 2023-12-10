@@ -37,12 +37,13 @@ namespace MexicanTrain
                        
         }
 
-        public Player Player1 { get; set; }
-        public Player Player2 { get; set; }
-        public Player Player3 { get; set; }
-        public Player Player4 { get; set; }
-        public Player Player5 { get; set; }
-        public Player Player6 { get; set; }
+        public Player Player1 = new Player();
+        public Player Player2 = new Player();
+        public Player Player3 = new Player();
+        public Player Player4 = new Player();
+        public Player Player5 = new Player();
+        public Player Player6 = new Player();
+        public Game Game { get; set; }
         private void player1comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             Player1.name = player1comboBox.SelectedText;

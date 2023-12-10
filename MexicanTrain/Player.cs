@@ -11,21 +11,29 @@ namespace MexicanTrain
     //A class to represent a player and their scores
     public class Player
     {
-
-        public string name;
-        public int[] roundScores;
-
         public Player()
         {
-            this.name = "unknown";
-            this.roundScores = new int[13] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            this.Name = "unknown";
+            this.RoundScores = new int[13] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         }
-        //A constructor method that is called with parameters
-        public Player(string name, int[] roundScores)
+        
+        //initiated value for name
+        private string Name = "unknown";
+        public string name 
+        { 
+            get { return this.Name; } 
+            set { this.Name = value; } 
+        }
+
+        //initiated values for round scores array
+        private int[] RoundScores = new int[13] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public int[] roundScores
         {
-            this.name = name;
-            this.roundScores = roundScores;
+            get { return this.RoundScores; }
+            set { this.RoundScores = value; }
         }
+        
+        
 
 
         //A method to tally the total score from a player's array of scores by iterating through the array and adding them together

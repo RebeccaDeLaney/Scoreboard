@@ -90,7 +90,7 @@ namespace MexicanTrain
                 MessageBox.Show("This name is invalid");
             }
         }
-        public static void SaveGame(Game game)
+        public static void SaveGame(Game game, List<Player> playerList)
         {
             SqlConnection cnn;
             cnn = new SqlConnection(CnnHelper.CnnVal("GameMaster"));
@@ -98,6 +98,7 @@ namespace MexicanTrain
             DateTime gameDate = game.StartTime;
             string insertGameQuery = "insert into Session (game_date) values ('" + gameDate + "');";
             SqlCommand cmd = new SqlCommand(insertGameQuery, cnn);
+
             cnn.Close();
         }
     }
