@@ -36,7 +36,7 @@ namespace MexicanTrain
             
                        
         }
-
+        //Creating the Players and Game objects
         public Player Player1 = new Player();
         public Player Player2 = new Player();
         public Player Player3 = new Player();
@@ -44,6 +44,8 @@ namespace MexicanTrain
         public Player Player5 = new Player();
         public Player Player6 = new Player();
         public Game Game = new Game();
+
+        //Updating names based on comboBox choices
         private void player1comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             Player1.name = player1comboBox.SelectedText;
@@ -68,7 +70,7 @@ namespace MexicanTrain
         {
             Player6.name = player6comboBox.SelectedText;
         }
-
+        //updating scores as the numbers are changed
         public void player1round12_TextChanged(object sender, EventArgs e)
         {
             try
@@ -922,17 +924,19 @@ namespace MexicanTrain
                 Console.WriteLine(ex.Message);
             }   
         }
+
+        //changing the totals with the click of the "Total" button
         private void totalButton_Click(object sender, EventArgs e)
         {
             try
             {
                 
-                player1total.Text = (Player1.ScoreTotal()).ToString();
-                player2total.Text = (Player2.ScoreTotal()).ToString();
-                player3total.Text = (Player3.ScoreTotal()).ToString();
-                player4total.Text = (Player4.ScoreTotal()).ToString();
-                player5total.Text = (Player5.ScoreTotal()).ToString();
-                player6total.Text = (Player6.ScoreTotal()).ToString();
+                player1total.Text = Player1.ScoreTotal().ToString();
+                player2total.Text = Player2.ScoreTotal().ToString();
+                player3total.Text = Player3.ScoreTotal().ToString();
+                player4total.Text = Player4.ScoreTotal().ToString();
+                player5total.Text = Player5.ScoreTotal().ToString();
+                player6total.Text = Player6.ScoreTotal().ToString();
 
                 if ((Player1.roundScores[0] != 0) ||
                     (Player2.roundScores[0] != 0) ||
@@ -981,5 +985,7 @@ namespace MexicanTrain
             PlayersForm newPlayersForm = new PlayersForm();
             newPlayersForm.Show();
         }
+
+        
     }
 }

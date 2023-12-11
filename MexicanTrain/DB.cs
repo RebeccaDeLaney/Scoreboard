@@ -82,10 +82,10 @@ namespace MexicanTrain
             if (Player.IsUsernameValid(player_name))
             {
                 SqlConnection cnn;
-                cnn = new SqlConnection(CnnHelper.CnnVal("GameMaster"));
+                cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
                 cnn.Open();
                 string newPlayer = player_name;
-                string newPlayerQuery = "insert into  [Players] player_name values ('" + player_name + "')";
+                string newPlayerQuery = "insert into [Players] (player_name) values ('" + player_name + "')";
                 cnn.Close();    
             } else
             {
@@ -112,8 +112,8 @@ namespace MexicanTrain
             int player6score = player6.ScoreTotal();
             string insertGameQuery = "insert into [Game Session] (game_date) values ('" + gameDate + "');";
             SqlCommand cmd = new SqlCommand(insertGameQuery, cnn);
-            string insertPlayer1Score = "intsert into [Scoring1] values ";
-            SqlCommand cmd2 = new SqlCommand(insertPlayer1Score, cnn);
+            //string insertPlayer1Score = "intsert into [Scoring1] values ";
+            //SqlCommand cmd2 = new SqlCommand(insertPlayer1Score, cnn);
             cnn.Close();
         }
     }

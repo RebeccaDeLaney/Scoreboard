@@ -20,5 +20,16 @@ namespace MexicanTrain
                 plyaersComboBox.DataSource = playerList;
         }
 
+        private void addPlayerButton_Click(object sender, EventArgs e)
+        {
+            if(newPlayerName.Text != "New Player Name")
+            {
+                DB.AddPlayer(newPlayerName.Text);
+                MessageBox.Show("New player is saved.", "Confirmed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            } else
+            {
+                MessageBox.Show("Please enter a name.", "Error", MessageBoxButtons.OK);
+            }
+        }
     }
 }

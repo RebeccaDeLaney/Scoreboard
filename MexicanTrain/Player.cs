@@ -91,7 +91,7 @@ namespace MexicanTrain
         {
             //Valid usernames must contain only alphanumeric characters and underscores
             string pattern = @"^[a-zA-Z0-9_]{3,20}$";
-            return Regex.IsMatch(pattern, username);
+            return Regex.IsMatch(username, pattern);
         }
 
     }
