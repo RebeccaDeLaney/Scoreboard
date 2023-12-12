@@ -209,6 +209,7 @@
             this.rulesButton.TabIndex = 4;
             this.rulesButton.Text = "Game Rules";
             this.rulesButton.UseVisualStyleBackColor = false;
+            this.rulesButton.Visible = false;
             // 
             // player1comboBox
             // 
@@ -222,6 +223,7 @@
             this.player1comboBox.Size = new System.Drawing.Size(164, 32);
             this.player1comboBox.TabIndex = 12;
             this.player1comboBox.Text = "Select Player";
+            this.player1comboBox.SelectedIndexChanged += new System.EventHandler(this.player1comboBox_SelectedIndexChanged);
             // 
             // player2comboBox
             // 
@@ -235,6 +237,7 @@
             this.player2comboBox.Size = new System.Drawing.Size(164, 32);
             this.player2comboBox.TabIndex = 13;
             this.player2comboBox.Text = "Select Player";
+            this.player2comboBox.SelectedIndexChanged += new System.EventHandler(this.player2comboBox_SelectedIndexChanged);
             // 
             // player3comboBox
             // 
@@ -248,6 +251,7 @@
             this.player3comboBox.Size = new System.Drawing.Size(164, 32);
             this.player3comboBox.TabIndex = 14;
             this.player3comboBox.Text = "Select Player";
+            this.player3comboBox.SelectedIndexChanged += new System.EventHandler(this.player3comboBox_SelectedIndexChanged);
             // 
             // player4comboBox
             // 
@@ -261,6 +265,7 @@
             this.player4comboBox.Size = new System.Drawing.Size(164, 32);
             this.player4comboBox.TabIndex = 15;
             this.player4comboBox.Text = "Select Player";
+            this.player4comboBox.SelectedIndexChanged += new System.EventHandler(this.player4comboBox_SelectedIndexChanged);
             // 
             // player5comboBox
             // 
@@ -274,6 +279,7 @@
             this.player5comboBox.Size = new System.Drawing.Size(164, 32);
             this.player5comboBox.TabIndex = 16;
             this.player5comboBox.Text = "Select Player";
+            this.player5comboBox.SelectedIndexChanged += new System.EventHandler(this.player5comboBox_SelectedIndexChanged);
             // 
             // player6comboBox
             // 
@@ -287,6 +293,7 @@
             this.player6comboBox.Size = new System.Drawing.Size(164, 32);
             this.player6comboBox.TabIndex = 17;
             this.player6comboBox.Text = "Select Player";
+            this.player6comboBox.SelectedIndexChanged += new System.EventHandler(this.player6comboBox_SelectedIndexChanged);
             // 
             // player1round11
             // 
@@ -314,6 +321,7 @@
             this.player1round10.TabIndex = 28;
             this.player1round10.Text = "0";
             this.player1round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round10.TextChanged += new System.EventHandler(this.player1round10_TextChanged);
             // 
             // player1round9
             // 
@@ -327,6 +335,7 @@
             this.player1round9.TabIndex = 29;
             this.player1round9.Text = "0";
             this.player1round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round9.TextChanged += new System.EventHandler(this.player1round9_TextChanged);
             // 
             // player1round8
             // 
@@ -340,6 +349,7 @@
             this.player1round8.TabIndex = 30;
             this.player1round8.Text = "0";
             this.player1round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round8.TextChanged += new System.EventHandler(this.player1round8_TextChanged);
             // 
             // player1round7
             // 
@@ -353,6 +363,7 @@
             this.player1round7.TabIndex = 31;
             this.player1round7.Text = "0";
             this.player1round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round7.TextChanged += new System.EventHandler(this.player1round7_TextChanged);
             // 
             // player1round6
             // 
@@ -366,6 +377,7 @@
             this.player1round6.TabIndex = 32;
             this.player1round6.Text = "0";
             this.player1round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round6.TextChanged += new System.EventHandler(this.player1round6_TextChanged);
             // 
             // player1round5
             // 
@@ -379,6 +391,7 @@
             this.player1round5.TabIndex = 33;
             this.player1round5.Text = "0";
             this.player1round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round5.TextChanged += new System.EventHandler(this.player1round5_TextChanged);
             // 
             // player1round4
             // 
@@ -392,6 +405,7 @@
             this.player1round4.TabIndex = 34;
             this.player1round4.Text = "0";
             this.player1round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round4.TextChanged += new System.EventHandler(this.player1round4_TextChanged);
             // 
             // player1round3
             // 
@@ -405,6 +419,7 @@
             this.player1round3.TabIndex = 35;
             this.player1round3.Text = "0";
             this.player1round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round3.TextChanged += new System.EventHandler(this.player1round3_TextChanged);
             // 
             // player1round2
             // 
@@ -418,6 +433,7 @@
             this.player1round2.TabIndex = 36;
             this.player1round2.Text = "0";
             this.player1round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round2.TextChanged += new System.EventHandler(this.player1round2_TextChanged);
             // 
             // player1round1
             // 
@@ -431,6 +447,7 @@
             this.player1round1.TabIndex = 37;
             this.player1round1.Text = "0";
             this.player1round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round1.TextChanged += new System.EventHandler(this.player1round1_TextChanged);
             // 
             // player1round0
             // 
@@ -444,6 +461,7 @@
             this.player1round0.TabIndex = 38;
             this.player1round0.Text = "0";
             this.player1round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1round0.TextChanged += new System.EventHandler(this.player1round0_TextChanged);
             // 
             // player1round12
             // 
@@ -471,6 +489,7 @@
             this.player2round12.TabIndex = 40;
             this.player2round12.Text = "0";
             this.player2round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round12.TextChanged += new System.EventHandler(this.player2round12_TextChanged);
             // 
             // player2round11
             // 
@@ -484,6 +503,7 @@
             this.player2round11.TabIndex = 41;
             this.player2round11.Text = "0";
             this.player2round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round11.TextChanged += new System.EventHandler(this.player2round11_TextChanged);
             // 
             // player2round10
             // 
@@ -497,6 +517,7 @@
             this.player2round10.TabIndex = 42;
             this.player2round10.Text = "0";
             this.player2round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round10.TextChanged += new System.EventHandler(this.player2round10_TextChanged);
             // 
             // player2round9
             // 
@@ -510,6 +531,7 @@
             this.player2round9.TabIndex = 43;
             this.player2round9.Text = "0";
             this.player2round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round9.TextChanged += new System.EventHandler(this.player2round9_TextChanged);
             // 
             // player2round8
             // 
@@ -523,6 +545,7 @@
             this.player2round8.TabIndex = 44;
             this.player2round8.Text = "0";
             this.player2round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round8.TextChanged += new System.EventHandler(this.player2round8_TextChanged);
             // 
             // player2round7
             // 
@@ -536,6 +559,7 @@
             this.player2round7.TabIndex = 45;
             this.player2round7.Text = "0";
             this.player2round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round7.TextChanged += new System.EventHandler(this.player2round7_TextChanged);
             // 
             // player2round6
             // 
@@ -549,6 +573,7 @@
             this.player2round6.TabIndex = 46;
             this.player2round6.Text = "0";
             this.player2round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round6.TextChanged += new System.EventHandler(this.player2round6_TextChanged);
             // 
             // player2round5
             // 
@@ -562,6 +587,7 @@
             this.player2round5.TabIndex = 47;
             this.player2round5.Text = "0";
             this.player2round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round5.TextChanged += new System.EventHandler(this.player2round5_TextChanged);
             // 
             // player2round4
             // 
@@ -575,6 +601,7 @@
             this.player2round4.TabIndex = 48;
             this.player2round4.Text = "0";
             this.player2round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round4.TextChanged += new System.EventHandler(this.player2round4_TextChanged);
             // 
             // player2round3
             // 
@@ -588,6 +615,7 @@
             this.player2round3.TabIndex = 49;
             this.player2round3.Text = "0";
             this.player2round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round3.TextChanged += new System.EventHandler(this.player2round3_TextChanged);
             // 
             // player2round2
             // 
@@ -601,6 +629,7 @@
             this.player2round2.TabIndex = 50;
             this.player2round2.Text = "0";
             this.player2round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round2.TextChanged += new System.EventHandler(this.player2round2_TextChanged);
             // 
             // player2round1
             // 
@@ -614,6 +643,7 @@
             this.player2round1.TabIndex = 51;
             this.player2round1.Text = "0";
             this.player2round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round1.TextChanged += new System.EventHandler(this.player2round1_TextChanged);
             // 
             // player2round0
             // 
@@ -627,6 +657,7 @@
             this.player2round0.TabIndex = 52;
             this.player2round0.Text = "0";
             this.player2round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player2round0.TextChanged += new System.EventHandler(this.player2round0_TextChanged);
             // 
             // player3round12
             // 
@@ -640,6 +671,7 @@
             this.player3round12.TabIndex = 53;
             this.player3round12.Text = "0";
             this.player3round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round12.TextChanged += new System.EventHandler(this.player3round12_TextChanged);
             // 
             // player3round11
             // 
@@ -653,6 +685,7 @@
             this.player3round11.TabIndex = 54;
             this.player3round11.Text = "0";
             this.player3round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round11.TextChanged += new System.EventHandler(this.player3round11_TextChanged);
             // 
             // player3round10
             // 
@@ -666,6 +699,7 @@
             this.player3round10.TabIndex = 55;
             this.player3round10.Text = "0";
             this.player3round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round10.TextChanged += new System.EventHandler(this.player3round10_TextChanged);
             // 
             // player3round9
             // 
@@ -679,6 +713,7 @@
             this.player3round9.TabIndex = 56;
             this.player3round9.Text = "0";
             this.player3round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round9.TextChanged += new System.EventHandler(this.player3round9_TextChanged);
             // 
             // player3round8
             // 
@@ -692,6 +727,7 @@
             this.player3round8.TabIndex = 57;
             this.player3round8.Text = "0";
             this.player3round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round8.TextChanged += new System.EventHandler(this.player3round8_TextChanged);
             // 
             // player3round7
             // 
@@ -705,6 +741,7 @@
             this.player3round7.TabIndex = 58;
             this.player3round7.Text = "0";
             this.player3round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round7.TextChanged += new System.EventHandler(this.player3round7_TextChanged);
             // 
             // player3round6
             // 
@@ -718,6 +755,7 @@
             this.player3round6.TabIndex = 59;
             this.player3round6.Text = "0";
             this.player3round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round6.TextChanged += new System.EventHandler(this.player3round6_TextChanged);
             // 
             // player3round5
             // 
@@ -731,6 +769,7 @@
             this.player3round5.TabIndex = 60;
             this.player3round5.Text = "0";
             this.player3round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round5.TextChanged += new System.EventHandler(this.player3round5_TextChanged);
             // 
             // player3round4
             // 
@@ -744,6 +783,7 @@
             this.player3round4.TabIndex = 61;
             this.player3round4.Text = "0";
             this.player3round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round4.TextChanged += new System.EventHandler(this.player3round4_TextChanged);
             // 
             // player3round3
             // 
@@ -757,6 +797,7 @@
             this.player3round3.TabIndex = 62;
             this.player3round3.Text = "0";
             this.player3round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round3.TextChanged += new System.EventHandler(this.player3round3_TextChanged);
             // 
             // player3round2
             // 
@@ -770,6 +811,7 @@
             this.player3round2.TabIndex = 63;
             this.player3round2.Text = "0";
             this.player3round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round2.TextChanged += new System.EventHandler(this.player3round2_TextChanged);
             // 
             // player3round1
             // 
@@ -783,6 +825,7 @@
             this.player3round1.TabIndex = 64;
             this.player3round1.Text = "0";
             this.player3round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round1.TextChanged += new System.EventHandler(this.player3round1_TextChanged);
             // 
             // player3round0
             // 
@@ -796,6 +839,7 @@
             this.player3round0.TabIndex = 65;
             this.player3round0.Text = "0";
             this.player3round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player3round0.TextChanged += new System.EventHandler(this.player3round0_TextChanged);
             // 
             // player4round12
             // 
@@ -809,6 +853,7 @@
             this.player4round12.TabIndex = 66;
             this.player4round12.Text = "0";
             this.player4round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round12.TextChanged += new System.EventHandler(this.player4round12_TextChanged);
             // 
             // player4round11
             // 
@@ -822,6 +867,7 @@
             this.player4round11.TabIndex = 67;
             this.player4round11.Text = "0";
             this.player4round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round11.TextChanged += new System.EventHandler(this.player4round11_TextChanged);
             // 
             // player4round10
             // 
@@ -835,6 +881,7 @@
             this.player4round10.TabIndex = 68;
             this.player4round10.Text = "0";
             this.player4round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round10.TextChanged += new System.EventHandler(this.player4round10_TextChanged);
             // 
             // player4round9
             // 
@@ -848,6 +895,7 @@
             this.player4round9.TabIndex = 69;
             this.player4round9.Text = "0";
             this.player4round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round9.TextChanged += new System.EventHandler(this.player4round9_TextChanged);
             // 
             // player4round8
             // 
@@ -861,6 +909,7 @@
             this.player4round8.TabIndex = 70;
             this.player4round8.Text = "0";
             this.player4round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round8.TextChanged += new System.EventHandler(this.player4round8_TextChanged);
             // 
             // player4round7
             // 
@@ -874,6 +923,7 @@
             this.player4round7.TabIndex = 71;
             this.player4round7.Text = "0";
             this.player4round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round7.TextChanged += new System.EventHandler(this.player4round7_TextChanged);
             // 
             // player4round6
             // 
@@ -887,6 +937,7 @@
             this.player4round6.TabIndex = 72;
             this.player4round6.Text = "0";
             this.player4round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round6.TextChanged += new System.EventHandler(this.player4round6_TextChanged);
             // 
             // player4round5
             // 
@@ -900,6 +951,7 @@
             this.player4round5.TabIndex = 73;
             this.player4round5.Text = "0";
             this.player4round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round5.TextChanged += new System.EventHandler(this.player4round5_TextChanged);
             // 
             // player4round4
             // 
@@ -913,6 +965,7 @@
             this.player4round4.TabIndex = 74;
             this.player4round4.Text = "0";
             this.player4round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round4.TextChanged += new System.EventHandler(this.player4round4_TextChanged);
             // 
             // player4round3
             // 
@@ -926,6 +979,7 @@
             this.player4round3.TabIndex = 75;
             this.player4round3.Text = "0";
             this.player4round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round3.TextChanged += new System.EventHandler(this.player4round3_TextChanged);
             // 
             // player4round2
             // 
@@ -939,6 +993,7 @@
             this.player4round2.TabIndex = 76;
             this.player4round2.Text = "0";
             this.player4round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round2.TextChanged += new System.EventHandler(this.player4round2_TextChanged);
             // 
             // player4round1
             // 
@@ -952,6 +1007,7 @@
             this.player4round1.TabIndex = 77;
             this.player4round1.Text = "0";
             this.player4round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round1.TextChanged += new System.EventHandler(this.player4round1_TextChanged);
             // 
             // player4round0
             // 
@@ -965,6 +1021,7 @@
             this.player4round0.TabIndex = 78;
             this.player4round0.Text = "0";
             this.player4round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player4round0.TextChanged += new System.EventHandler(this.player4round0_TextChanged);
             // 
             // player5round12
             // 
@@ -978,6 +1035,7 @@
             this.player5round12.TabIndex = 79;
             this.player5round12.Text = "0";
             this.player5round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round12.TextChanged += new System.EventHandler(this.player5round12_TextChanged);
             // 
             // player5round11
             // 
@@ -991,6 +1049,7 @@
             this.player5round11.TabIndex = 80;
             this.player5round11.Text = "0";
             this.player5round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round11.TextChanged += new System.EventHandler(this.player5round11_TextChanged);
             // 
             // player5round10
             // 
@@ -1004,6 +1063,7 @@
             this.player5round10.TabIndex = 81;
             this.player5round10.Text = "0";
             this.player5round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round10.TextChanged += new System.EventHandler(this.player5round10_TextChanged);
             // 
             // player5round9
             // 
@@ -1017,6 +1077,7 @@
             this.player5round9.TabIndex = 82;
             this.player5round9.Text = "0";
             this.player5round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round9.TextChanged += new System.EventHandler(this.player5round9_TextChanged);
             // 
             // player5round8
             // 
@@ -1030,6 +1091,7 @@
             this.player5round8.TabIndex = 83;
             this.player5round8.Text = "0";
             this.player5round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round8.TextChanged += new System.EventHandler(this.player5round8_TextChanged);
             // 
             // player5round7
             // 
@@ -1043,6 +1105,7 @@
             this.player5round7.TabIndex = 84;
             this.player5round7.Text = "0";
             this.player5round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round7.TextChanged += new System.EventHandler(this.player5round7_TextChanged);
             // 
             // player5round6
             // 
@@ -1056,6 +1119,7 @@
             this.player5round6.TabIndex = 85;
             this.player5round6.Text = "0";
             this.player5round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round6.TextChanged += new System.EventHandler(this.player5round6_TextChanged);
             // 
             // player5round5
             // 
@@ -1069,6 +1133,7 @@
             this.player5round5.TabIndex = 86;
             this.player5round5.Text = "0";
             this.player5round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round5.TextChanged += new System.EventHandler(this.player5round5_TextChanged);
             // 
             // player5round4
             // 
@@ -1082,6 +1147,7 @@
             this.player5round4.TabIndex = 87;
             this.player5round4.Text = "0";
             this.player5round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round4.TextChanged += new System.EventHandler(this.player5round4_TextChanged);
             // 
             // player5round3
             // 
@@ -1095,6 +1161,7 @@
             this.player5round3.TabIndex = 88;
             this.player5round3.Text = "0";
             this.player5round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round3.TextChanged += new System.EventHandler(this.player5round3_TextChanged);
             // 
             // player5round2
             // 
@@ -1108,6 +1175,7 @@
             this.player5round2.TabIndex = 89;
             this.player5round2.Text = "0";
             this.player5round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round2.TextChanged += new System.EventHandler(this.player5round2_TextChanged);
             // 
             // player5round1
             // 
@@ -1121,6 +1189,7 @@
             this.player5round1.TabIndex = 90;
             this.player5round1.Text = "0";
             this.player5round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round1.TextChanged += new System.EventHandler(this.player5round1_TextChanged);
             // 
             // player5round0
             // 
@@ -1134,6 +1203,7 @@
             this.player5round0.TabIndex = 91;
             this.player5round0.Text = "0";
             this.player5round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player5round0.TextChanged += new System.EventHandler(this.player5round0_TextChanged);
             // 
             // player6round12
             // 
@@ -1147,6 +1217,7 @@
             this.player6round12.TabIndex = 92;
             this.player6round12.Text = "0";
             this.player6round12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round12.TextChanged += new System.EventHandler(this.player6round12_TextChanged);
             // 
             // player6round11
             // 
@@ -1160,6 +1231,7 @@
             this.player6round11.TabIndex = 93;
             this.player6round11.Text = "0";
             this.player6round11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round11.TextChanged += new System.EventHandler(this.player6round11_TextChanged);
             // 
             // player6round10
             // 
@@ -1173,6 +1245,7 @@
             this.player6round10.TabIndex = 94;
             this.player6round10.Text = "0";
             this.player6round10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round10.TextChanged += new System.EventHandler(this.player6round10_TextChanged);
             // 
             // player6round9
             // 
@@ -1186,6 +1259,7 @@
             this.player6round9.TabIndex = 95;
             this.player6round9.Text = "0";
             this.player6round9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round9.TextChanged += new System.EventHandler(this.player6round9_TextChanged);
             // 
             // player6round8
             // 
@@ -1199,6 +1273,7 @@
             this.player6round8.TabIndex = 96;
             this.player6round8.Text = "0";
             this.player6round8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round8.TextChanged += new System.EventHandler(this.player6round8_TextChanged);
             // 
             // player6round7
             // 
@@ -1212,6 +1287,7 @@
             this.player6round7.TabIndex = 97;
             this.player6round7.Text = "0";
             this.player6round7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round7.TextChanged += new System.EventHandler(this.player6round7_TextChanged);
             // 
             // player6round6
             // 
@@ -1225,6 +1301,7 @@
             this.player6round6.TabIndex = 98;
             this.player6round6.Text = "0";
             this.player6round6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round6.TextChanged += new System.EventHandler(this.player6round6_TextChanged);
             // 
             // player6round5
             // 
@@ -1238,6 +1315,7 @@
             this.player6round5.TabIndex = 99;
             this.player6round5.Text = "0";
             this.player6round5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round5.TextChanged += new System.EventHandler(this.player6round5_TextChanged);
             // 
             // player6round4
             // 
@@ -1251,6 +1329,7 @@
             this.player6round4.TabIndex = 100;
             this.player6round4.Text = "0";
             this.player6round4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round4.TextChanged += new System.EventHandler(this.player6round4_TextChanged);
             // 
             // player6round3
             // 
@@ -1264,6 +1343,7 @@
             this.player6round3.TabIndex = 101;
             this.player6round3.Text = "0";
             this.player6round3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round3.TextChanged += new System.EventHandler(this.player6round3_TextChanged);
             // 
             // player6round2
             // 
@@ -1277,6 +1357,7 @@
             this.player6round2.TabIndex = 102;
             this.player6round2.Text = "0";
             this.player6round2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round2.TextChanged += new System.EventHandler(this.player6round2_TextChanged);
             // 
             // player6round1
             // 
@@ -1290,6 +1371,7 @@
             this.player6round1.TabIndex = 103;
             this.player6round1.Text = "0";
             this.player6round1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round1.TextChanged += new System.EventHandler(this.player6round1_TextChanged);
             // 
             // player6round0
             // 
@@ -1303,6 +1385,7 @@
             this.player6round0.TabIndex = 104;
             this.player6round0.Text = "0";
             this.player6round0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player6round0.TextChanged += new System.EventHandler(this.player6round0_TextChanged);
             // 
             // saveButton
             // 
@@ -1520,13 +1603,13 @@
             // winnerLabel
             // 
             this.winnerLabel.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.winnerLabel.Font = new System.Drawing.Font("Engravers MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winnerLabel.Font = new System.Drawing.Font("Engravers MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.winnerLabel.ForeColor = System.Drawing.Color.DarkRed;
             this.winnerLabel.Location = new System.Drawing.Point(96, 604);
             this.winnerLabel.Name = "winnerLabel";
-            this.winnerLabel.Size = new System.Drawing.Size(500, 40);
+            this.winnerLabel.Size = new System.Drawing.Size(400, 30);
             this.winnerLabel.TabIndex = 126;
-            this.winnerLabel.Text = "Winner: ";
+            this.winnerLabel.Text = "Winner:";
             this.winnerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.winnerLabel.Visible = false;
             // 

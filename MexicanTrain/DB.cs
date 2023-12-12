@@ -85,7 +85,7 @@ namespace MexicanTrain
                 cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
                 cnn.Open();
                 string newPlayer = player_name;
-                string newPlayerQuery = "insert into [Players] (player_name) values ('" + player_name + "')";
+                string newPlayerQuery = "INSERT INTO [Players] (player_name) VALUES ('" + player_name + "')";
                 cnn.Close();    
             } else
             {

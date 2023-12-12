@@ -84,21 +84,23 @@ namespace MexicanTrain
          }
 
         public void player1round11_TextChanged(object sender, EventArgs e)
-        {   try
+        {   
+            try
             {
                 Player1.roundScores[11] = Int32.Parse(player1round11.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
         }
         public void player1round10_TextChanged(object sender, EventArgs e)
-        {   try
+        {   
+            try
             {
                 Player1.roundScores[10] = Int32.Parse(player1round10.Text);
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }   
@@ -928,8 +930,8 @@ namespace MexicanTrain
         //changing the totals with the click of the "Total" button
         private void totalButton_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
                 
                 player1total.Text = Player1.ScoreTotal().ToString();
                 player2total.Text = Player2.ScoreTotal().ToString();
@@ -960,11 +962,11 @@ namespace MexicanTrain
                     winnerLabel.Text = "Winner : " + winner.name;
                     winnerLabel.Visible = true;
                 }
-            }
-            catch (Exception ex) 
-            {
-                Console.WriteLine(ex.Message);
-            }
+            //}
+            //catch (Exception ex) 
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
         }
 
         private void MainMenu_Click(object sender, EventArgs e)
