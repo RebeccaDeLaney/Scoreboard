@@ -72,10 +72,34 @@ namespace MexicanTrain
             return game_dateList;
         }
 
-        //public List<MTGame> GetGames()
-        //{
+        public static List<string> GetScore()
+        {
+            SqlDataReader dataReader;
 
-        //}
+            SqlConnection cnn;
+            cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
+            cnn.Open();
+            List<string> score = new List<string>();
+
+            string playerScoreQuery = "select player_name  from scoring1";
+            SqlCommand cmd = new SqlCommand(playerScoreQuery, cnn);
+            dataReader = cmd.ExecuteReader();
+            while (dataReader.Read())
+            {
+                try
+                {
+                    score.Add((string)dataReader.GetValue(0));
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            cnn.Close();
+            return score;
+        }
+        
+   
 
         public static void AddPlayer(string player_name)
         {

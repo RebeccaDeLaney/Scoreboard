@@ -20,6 +20,6 @@ namespace MexicanTrain
             gameDateComboBox.DataSource = gameList;
         }
 
-        
     }
+
 }

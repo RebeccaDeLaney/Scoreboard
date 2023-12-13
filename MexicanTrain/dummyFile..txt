@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+public partial class YourFormName : Form
+{
+    // Declare a public object at the class level
+    public string PublicStringObject;// replace this PublicStringObject with the type of object needed to be used.
+
+
+    public YourFormName()// form name 
+    {
+        InitializeComponent();
+    }
+
+    // Rest of your code...
+}
+

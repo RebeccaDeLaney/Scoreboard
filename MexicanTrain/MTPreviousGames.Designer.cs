@@ -41,7 +41,7 @@
             this.gameDateComboBox.FormattingEnabled = true;
             this.gameDateComboBox.Location = new System.Drawing.Point(80, 150);
             this.gameDateComboBox.Name = "gameDateComboBox";
-            this.gameDateComboBox.Size = new System.Drawing.Size(225, 56);
+            this.gameDateComboBox.Size = new System.Drawing.Size(225, 47);
             this.gameDateComboBox.TabIndex = 0;
             this.gameDateComboBox.Text = "Date List";
             // 
@@ -50,9 +50,9 @@
             this.menuButton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.menuButton.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuButton.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.menuButton.Location = new System.Drawing.Point(1135, 25);
+            this.menuButton.Location = new System.Drawing.Point(1135, 24);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(100, 40);
+            this.menuButton.Size = new System.Drawing.Size(117, 45);
             this.menuButton.TabIndex = 10;
             this.menuButton.Text = "Menu";
             this.menuButton.UseVisualStyleBackColor = false;
@@ -70,20 +70,20 @@
             // 
             this.winnerLabel.Location = new System.Drawing.Point(625, 250);
             this.winnerLabel.Name = "winnerLabel";
-            this.winnerLabel.Size = new System.Drawing.Size(250, 40);
+            this.winnerLabel.Size = new System.Drawing.Size(396, 40);
             this.winnerLabel.TabIndex = 14;
             this.winnerLabel.Text = "Winner: ";
             this.winnerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MTPreviousGames
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(26F, 48F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 39F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.winnerLabel);
             this.Controls.Add(this.gameDateLabel);
+            this.Controls.Add(this.winnerLabel);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.gameDateComboBox);
             this.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -1,0 +1,56 @@
+public static List<string> GetScore()
+        {
+            SqlDataReader dataReader;
+
+            SqlConnection cnn;
+            cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
+            cnn.Open();
+            List<string> score = new List<string>();
+
+            string playerScoreQuery = "select playerID from scoring1;
+            SqlCommand cmd = new SqlCommand(playerScoreQuery, cnn);
+            dataReader = cmd.ExecuteReader();
+            while (dataReader.Read())
+            {
+                try
+                {
+                    score.Add((string)dataReader.GetValue(0));
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            cnn.Close();
+            return score;
+        }
+         public static void GetWinner()
+    {
+        List<string> scores = GetScore();
+
+        if (scores.Count == 0)
+        {
+            Console.WriteLine("No scores available.");
+            return;
+        }
+
+        string winner = scores[0]; // Assume the first player is the initial winner
+        int lowestScore = int.MaxValue;
+
+        foreach (string playerScore in scores)
+        {
+            string[] parts = playerScore.Split(':');
+            string playerName = parts[0].Trim();
+            int score = int.Parse(parts[1].Trim());
+
+            if (score < lowestScore)
+            {
+                lowestScore = score;
+                winner = playerName;
+            }
+        }
+
+        Console.WriteLine($"Winner: {winner} with the lowest score of {lowestScore}");
+    }
+
+

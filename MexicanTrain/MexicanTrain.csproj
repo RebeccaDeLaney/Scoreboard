@@ -71,7 +71,12 @@
       <DependentUpon>ConnectionTestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DB.cs" />
+    <Content Include="dummy2.txt" />
+    <Content Include="dummyFile..txt">
+      <SubType>Form</SubType>
+    </Content>
     <Compile Include="Game.cs" />
+    <Content Include="highest_lowest_score.txt" />
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
