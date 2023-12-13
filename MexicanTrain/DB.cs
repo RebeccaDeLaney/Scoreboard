@@ -72,7 +72,7 @@ namespace MexicanTrain
             return game_dateList;
         }
 
-        //public List<MTGame> GetGames()
+        //public string GetWinner(string gameDate)
         //{
 
         //}
