@@ -1399,6 +1399,7 @@
             this.saveButton.TabIndex = 105;
             this.saveButton.Text = "Save Game";
             this.saveButton.UseVisualStyleBackColor = false;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // totalButton
             // 

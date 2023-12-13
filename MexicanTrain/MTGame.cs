@@ -48,27 +48,27 @@ namespace MexicanTrain
         //Updating names based on comboBox choices
         private void player1comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Player1.name = player1comboBox.SelectedText;
+            Player1.name = player1comboBox.SelectedItem.ToString();
         }
         private void player2comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Player2.name = player2comboBox.SelectedText;
+            Player2.name = player2comboBox.SelectedItem.ToString();
         }
         private void player3comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Player3.name = player3comboBox.SelectedText;
+            Player3.name = player3comboBox.SelectedItem.ToString();
         }
         private void player4comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Player4.name = player4comboBox.SelectedText;
+            Player4.name = player4comboBox.SelectedItem.ToString()  ;
         }
         private void player5comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Player5.name = player5comboBox.SelectedText;
+            Player5.name = player5comboBox.SelectedItem.ToString();
         }
         private void player6comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Player6.name = player6comboBox.SelectedText;
+            Player6.name = player6comboBox.SelectedItem.ToString();
         }
         //updating scores as the numbers are changed
         public void player1round12_TextChanged(object sender, EventArgs e)
@@ -917,22 +917,21 @@ namespace MexicanTrain
         }
         public void player6round0_TextChanged(object sender, EventArgs e)
         {
-           try
-           {
-            Player6.roundScores[0] = Int32.Parse(player6round0.Text);
-            }
-             catch (Exception ex)
+            try
             {
-                Console.WriteLine(ex.Message);
+                Player6.roundScores[0] = Int32.Parse(player6round0.Text);
+            }
+            catch (Exception ex)
+            {
+            Console.WriteLine(ex.Message);
             }   
         }
 
         //changing the totals with the click of the "Total" button
         private void totalButton_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-                
+            try
+            {    
                 player1total.Text = Player1.ScoreTotal().ToString();
                 player2total.Text = Player2.ScoreTotal().ToString();
                 player3total.Text = Player3.ScoreTotal().ToString();
@@ -962,13 +961,24 @@ namespace MexicanTrain
                     winnerLabel.Text = "Winner : " + winner.name;
                     winnerLabel.Visible = true;
                 }
-            //}
-            //catch (Exception ex) 
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DB.SaveGame(Game, Player1, Player2, Player3, Player4, Player5, Player6);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
         private void MainMenu_Click(object sender, EventArgs e)
         {
             MainMenu mainMenu = new MainMenu();

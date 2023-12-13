@@ -72,10 +72,10 @@ namespace MexicanTrain
             return game_dateList;
         }
 
-        //public string GetWinner(string gameDate)
-        //{
+        public string GetWinner(string gameDate)
+        {
 
-        //}
+        }
 
         public static void AddPlayer(string player_name)
         {
@@ -107,7 +107,7 @@ namespace MexicanTrain
             SqlDataReader gameIdDataReader;
             
             //using objects to declare variables to be used in queries
-            string gameDate = game.startTime.ToString("yyyy'-'MM'-'dd'");
+            string gameDate = game.startTime.ToString("yyyy'-'MM'-'dd");
             
             string player1name = player1.name;
             string player2name = player2.name;
@@ -132,14 +132,16 @@ namespace MexicanTrain
             string player5id = "";
             string player6id = "";
 
-            cnn = new SqlConnection(CnnHelper.CnnVal("GameMaster"));
-            cnn.Open();
-            
             //insert the game_date and retrieve the game_id
+            cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
+            cnn.Open();
+                        
             string insertGameQuery = "insert into [Game Session] (game_date) values ('" + gameDate + "'); ";
             SqlCommand insertGameCmd = new SqlCommand(insertGameQuery, cnn);
             insertGameCmd.ExecuteNonQuery();
+            cnn.Close();
 
+            cnn.Open();
             string getGameIdQuery = "select game_id from [Game Session] where game_date = '" + gameDate + "';";
             SqlCommand getGameIdCmd = new SqlCommand(getGameIdQuery, cnn);
             gameIdDataReader = getGameIdCmd.ExecuteReader();
@@ -147,15 +149,17 @@ namespace MexicanTrain
             {
                 try
                 {
-                    gameId = gameIdDataReader.GetString(0);
+                    gameId = gameIdDataReader.GetValue(0).ToString();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
             }
+            cnn.Close();
 
             //get the player1 id
+            cnn.Open();
             string getPlayer1id = "select player_ID from Players where player_name = '" + player1name + "';";
             SqlCommand getPlayer1idCmd = new SqlCommand (getPlayer1id, cnn);
             player1idDataReader = getPlayer1idCmd.ExecuteReader();
@@ -163,20 +167,24 @@ namespace MexicanTrain
             {
                 try
                 {
-                    player1id = player1idDataReader.GetString(0);
+                    player1id = player1idDataReader.GetValue(0).ToString();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
             }
+            cnn.Close();
 
             //insert player1 score
-            string insertPlayer1Score = "insert into [Scoring1] (player_ID, game_ID) values (" + player1id + ", " + gameId + ");";
+            cnn.Open();
+            string insertPlayer1Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player1id + ", " + player1score + ", " + gameId + ");";
             SqlCommand insertPlayer1Cmd = new SqlCommand(insertPlayer1Score, cnn);
             insertPlayer1Cmd.ExecuteNonQuery();
-
+            cnn.Close(); 
+            
             //get the player2 id
+            cnn.Open();
             string getPlayer2id = "select player_ID from Players where player_name = '" + player2name + "';";
             SqlCommand getPlayer2idCmd = new SqlCommand(getPlayer2id, cnn);
             player2idDataReader = getPlayer2idCmd.ExecuteReader();
@@ -184,20 +192,24 @@ namespace MexicanTrain
             {
                 try
                 {
-                    player2id = player2idDataReader.GetString(0);
+                    player2id = player2idDataReader.GetValue(0).ToString();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
             }
+            cnn.Close();
 
             //insert player2 score
-            string insertPlayer2Score = "insert into [Scoring1] (player_ID, game_ID) values (" + player2id + ", " + gameId + ");";
+            cnn.Open();
+            string insertPlayer2Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player2id + ", " + player2score + ", " + gameId + ");";
             SqlCommand insertPlayer2Cmd = new SqlCommand(insertPlayer2Score, cnn);
             insertPlayer2Cmd.ExecuteNonQuery();
+            cnn.Close();
 
             //get the player3 id
+            cnn.Open();
             string getPlayer3id = "select player_ID from Players where player_name = '" + player3name + "';";
             SqlCommand getPlayer3idCmd = new SqlCommand(getPlayer3id, cnn);
             player3idDataReader = getPlayer3idCmd.ExecuteReader();
@@ -205,20 +217,24 @@ namespace MexicanTrain
             {
                 try
                 {
-                    player3id = player3idDataReader.GetString(0);
+                    player3id = player3idDataReader.GetValue(0).ToString();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
             }
+            cnn.Close();
 
             //insert player3 score
-            string insertPlayer3Score = "insert into [Scoring1] (player_ID, game_ID) values (" + player3id + ", " + gameId + ");";
+            cnn.Open ();
+            string insertPlayer3Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player3id + ", " + player3score + ", " + gameId + ");";
             SqlCommand insertPlayer3Cmd = new SqlCommand(insertPlayer3Score, cnn);
             insertPlayer3Cmd.ExecuteNonQuery();
+            cnn.Close ();
 
             //get the player4 id
+            cnn.Open();
             string getPlayer4id = "select player_ID from Players where player_name = '" + player4name + "';";
             SqlCommand getPlayer4idCmd = new SqlCommand(getPlayer4id, cnn);
             player4idDataReader = getPlayer4idCmd.ExecuteReader();
@@ -226,20 +242,24 @@ namespace MexicanTrain
             {
                 try
                 {
-                    player4id = player4idDataReader.GetString(0);
+                    player4id = player4idDataReader.GetValue(0).ToString();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
             }
+            cnn.Close();
 
             //insert player4 score
-            string insertPlayer4Score = "insert into [Scoring1] (player_ID, game_ID) values (" + player4id + ", " + gameId + ");";
-            SqlCommand insertPlayer4Cmd = new SqlCommand(insertPlayer2Score, cnn);
+            cnn.Open();
+            string insertPlayer4Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player4id + ", " + player4score + ", " + gameId + ");";
+            SqlCommand insertPlayer4Cmd = new SqlCommand(insertPlayer4Score, cnn);
             insertPlayer4Cmd.ExecuteNonQuery();
+            cnn.Close();
 
             //get the player5 id
+            cnn.Open ();
             string getPlayer5id = "select player_ID from Players where player_name = '" + player5name + "';";
             SqlCommand getPlayer5idCmd = new SqlCommand(getPlayer5id, cnn);
             player5idDataReader = getPlayer5idCmd.ExecuteReader();
@@ -247,20 +267,24 @@ namespace MexicanTrain
             {
                 try
                 {
-                    player5id = player5idDataReader.GetString(0);
+                    player5id = player5idDataReader.GetValue(0).ToString();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
             }
+            cnn.Close ();
 
             //insert player5 score
-            string insertPlayer5Score = "insert into [Scoring1] (player_ID, game_ID) values (" + player5id + ", " + gameId + ");";
+            cnn.Open();
+            string insertPlayer5Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player5id + ", " + player5score + ", " + gameId + ");";
             SqlCommand insertPlayer5Cmd = new SqlCommand(insertPlayer5Score, cnn);
             insertPlayer5Cmd.ExecuteNonQuery();
+            cnn.Close();
 
             //get the player6 id
+            cnn.Open();
             string getPlayer6id = "select player_ID from Players where player_name = '" + player6name + "';";
             SqlCommand getPlayer6idCmd = new SqlCommand(getPlayer6id, cnn);
             player6idDataReader = getPlayer6idCmd.ExecuteReader();
@@ -268,19 +292,20 @@ namespace MexicanTrain
             {
                 try
                 {
-                    player6id = player6idDataReader.GetString(0);
+                    player6id = player6idDataReader.GetValue(0).ToString();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
             }
+            cnn.Close();
 
             //insert player6 score
-            string insertPlayer6Score = "insert into [Scoring1] (player_ID, game_ID) values (" + player6id + ", " + gameId + ");";
+            cnn.Open();
+            string insertPlayer6Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player6id + ", " + player6score + ", " + gameId + ");";
             SqlCommand insertPlayer6Cmd = new SqlCommand(insertPlayer6Score, cnn);
             insertPlayer6Cmd.ExecuteNonQuery();
-
             cnn.Close();
         }
     }
