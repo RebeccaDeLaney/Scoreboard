@@ -28,7 +28,7 @@ namespace MexicanTrain
         {
             //open new Game Form
             MTGame newGame = new MTGame();
-            newGame.Show();            
+            newGame.Show();
         }
 
         private void playersButton_Click(object sender, EventArgs e)
