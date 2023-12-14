@@ -982,7 +982,8 @@ namespace MexicanTrain
         private void MainMenu_Click(object sender, EventArgs e)
         {
             MainMenu mainMenu = new MainMenu();
-            mainMenu.Show();            
+            mainMenu.Show();
+            this.Close();
         }
 
         private void previousGamesButton_Click(object sender, EventArgs e)

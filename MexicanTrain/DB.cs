@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace MexicanTrain
 {
@@ -82,6 +83,12 @@ namespace MexicanTrain
             cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
             cnn.Open();
 
+            
+            //    "left join Players on Scoring1.playerID = Players.player_ID" +
+            //    "left join [Game Session] on Scoring1.game_ID = [Game Session].game_ID" +
+            //    "where Scoring1.score in " +
+            //    "((select MIN(score) from Scoring1 left join [Game Session] on Scoring1.game_ID = [Game Session].game_ID where [Game Session].game_date = '" 
+            //    + gameDate + "')) and [Game Session].game_date = '" + gameDate + "';";
             string getWinnerQuery = "select Players.player_name from Scoring1 " +
                 "left join Players on Scoring1.player_ID=Players.player_ID " +
                 "left join [Game Session] on Scoring1.game_ID=[Game Session].game_ID " +
@@ -106,6 +113,36 @@ namespace MexicanTrain
             return winner;
         }
 
+        public static List<string> GetPlayerListFromGame(string gameDate)
+        {
+            SqlDataReader dataReader;
+
+            SqlConnection cnn;
+            cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
+            cnn.Open();
+            List<string> playerList = new List<string>();
+
+            string playerNameQuery = "select player_name from Players " +
+                "left join Scoring1 on Players.player_ID = Scoring1.player_ID " +
+                "left join [Game Session] on Scoring1.game_ID = [Game Session].game_ID " +
+                "where [Game Session].game_date = '" + gameDate +"';";
+            SqlCommand cmd = new SqlCommand(playerNameQuery, cnn);
+            dataReader = cmd.ExecuteReader();
+            while (dataReader.Read())
+            {
+                try
+                {
+                    playerList.Add((string)dataReader.GetValue(0));
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            cnn.Close();
+            return playerList;
+        }
+
         public static void AddPlayer(string player_name)
         {
             if (Player.IsUsernameValid(player_name))
@@ -127,12 +164,6 @@ namespace MexicanTrain
         {
             //declaring sql variables to be used
             SqlConnection cnn;
-            SqlDataReader player1idDataReader;
-            SqlDataReader player2idDataReader;
-            SqlDataReader player3idDataReader;
-            SqlDataReader player4idDataReader;
-            SqlDataReader player5idDataReader;
-            SqlDataReader player6idDataReader;
             SqlDataReader gameIdDataReader;
             
             //using objects to declare variables to be used in queries
@@ -154,12 +185,6 @@ namespace MexicanTrain
             
             //declaring variables to be populated by and used by queries
             string gameId = "";
-            string player1id = "";
-            string player2id = "";
-            string player3id = "";
-            string player4id = "";
-            string player5id = "";
-            string player6id = "";
 
             //insert the game_date and retrieve the game_id
             cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
@@ -188,140 +213,71 @@ namespace MexicanTrain
             cnn.Close();
 
             //get the player1 id
-            cnn.Open();
-            string getPlayer1id = "select player_ID from Players where player_name = '" + player1name + "';";
-            SqlCommand getPlayer1idCmd = new SqlCommand (getPlayer1id, cnn);
-            player1idDataReader = getPlayer1idCmd.ExecuteReader();
-            while (player1idDataReader.Read()) 
-            {
-                try
-                {
-                    player1id = player1idDataReader.GetValue(0).ToString();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            cnn.Close();
+            string player1id = GetPlayerIdFromName(player1name);
 
             //insert player1 score
-            cnn.Open();
-            string insertPlayer1Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player1id + ", " + player1score + ", " + gameId + ");";
-            SqlCommand insertPlayer1Cmd = new SqlCommand(insertPlayer1Score, cnn);
-            insertPlayer1Cmd.ExecuteNonQuery();
-            cnn.Close(); 
+            InsertPlayerScore(player1id, player1score, gameId);
             
             //get the player2 id
-            cnn.Open();
-            string getPlayer2id = "select player_ID from Players where player_name = '" + player2name + "';";
-            SqlCommand getPlayer2idCmd = new SqlCommand(getPlayer2id, cnn);
-            player2idDataReader = getPlayer2idCmd.ExecuteReader();
-            while (player2idDataReader.Read())
-            {
-                try
-                {
-                    player2id = player2idDataReader.GetValue(0).ToString();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            cnn.Close();
+            string player2id = GetPlayerIdFromName(player2name);
 
             //insert player2 score
-            cnn.Open();
-            string insertPlayer2Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player2id + ", " + player2score + ", " + gameId + ");";
-            SqlCommand insertPlayer2Cmd = new SqlCommand(insertPlayer2Score, cnn);
-            insertPlayer2Cmd.ExecuteNonQuery();
-            cnn.Close();
-
+            InsertPlayerScore(player2id, player2score, gameId);
+            
             //get the player3 id
-            cnn.Open();
-            string getPlayer3id = "select player_ID from Players where player_name = '" + player3name + "';";
-            SqlCommand getPlayer3idCmd = new SqlCommand(getPlayer3id, cnn);
-            player3idDataReader = getPlayer3idCmd.ExecuteReader();
-            while (player3idDataReader.Read())
-            {
-                try
-                {
-                    player3id = player3idDataReader.GetValue(0).ToString();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            cnn.Close();
+            string player3id = GetPlayerIdFromName(player3name);
 
             //insert player3 score
-            cnn.Open ();
-            string insertPlayer3Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player3id + ", " + player3score + ", " + gameId + ");";
-            SqlCommand insertPlayer3Cmd = new SqlCommand(insertPlayer3Score, cnn);
-            insertPlayer3Cmd.ExecuteNonQuery();
-            cnn.Close ();
-
+            InsertPlayerScore(player3id, player3score, gameId);
+            
             //get the player4 id
-            cnn.Open();
-            string getPlayer4id = "select player_ID from Players where player_name = '" + player4name + "';";
-            SqlCommand getPlayer4idCmd = new SqlCommand(getPlayer4id, cnn);
-            player4idDataReader = getPlayer4idCmd.ExecuteReader();
-            while (player4idDataReader.Read())
-            {
-                try
-                {
-                    player4id = player4idDataReader.GetValue(0).ToString();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            cnn.Close();
+            string player4id = GetPlayerIdFromName(player4name);
 
             //insert player4 score
-            cnn.Open();
-            string insertPlayer4Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player4id + ", " + player4score + ", " + gameId + ");";
-            SqlCommand insertPlayer4Cmd = new SqlCommand(insertPlayer4Score, cnn);
-            insertPlayer4Cmd.ExecuteNonQuery();
-            cnn.Close();
+            InsertPlayerScore(player4id, player4score, gameId);
 
             //get the player5 id
-            cnn.Open ();
-            string getPlayer5id = "select player_ID from Players where player_name = '" + player5name + "';";
-            SqlCommand getPlayer5idCmd = new SqlCommand(getPlayer5id, cnn);
-            player5idDataReader = getPlayer5idCmd.ExecuteReader();
-            while (player5idDataReader.Read())
-            {
-                try
-                {
-                    player5id = player5idDataReader.GetValue(0).ToString();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            cnn.Close ();
+            string player5id = GetPlayerIdFromName(player5name);
 
             //insert player5 score
-            cnn.Open();
-            string insertPlayer5Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player5id + ", " + player5score + ", " + gameId + ");";
-            SqlCommand insertPlayer5Cmd = new SqlCommand(insertPlayer5Score, cnn);
-            insertPlayer5Cmd.ExecuteNonQuery();
-            cnn.Close();
+            InsertPlayerScore(player5id, player5score, gameId);
 
             //get the player6 id
+            string player6id = GetPlayerIdFromName(player6name);
+
+            //insert player6 score
+            InsertPlayerScore(player6id, player6score, gameId);
+        }
+
+        public static void InsertPlayerScore(string playerID, int playerScore, string gameID)
+        {
+            SqlConnection cnn;
+            cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
             cnn.Open();
-            string getPlayer6id = "select player_ID from Players where player_name = '" + player6name + "';";
-            SqlCommand getPlayer6idCmd = new SqlCommand(getPlayer6id, cnn);
-            player6idDataReader = getPlayer6idCmd.ExecuteReader();
-            while (player6idDataReader.Read())
+            string insertPlayerScore = "insert into [Scoring1] (player_ID, score, game_ID) values (" + playerID + ", " + playerScore + ", " + gameID + ");";
+            SqlCommand insertPlayerScoreCmd = new SqlCommand(insertPlayerScore, cnn);
+            insertPlayerScoreCmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
+        public static string GetPlayerNameFromId(string id)
+        {
+            string playerName = "";
+
+            SqlConnection cnn;
+            SqlDataReader dataReader;
+
+            cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
+
+            cnn.Open();
+            string getPlayerNameQuery = "select player_name from Players where player_ID = " + id + ";";
+            SqlCommand getPlayerNameCmd = new SqlCommand(getPlayerNameQuery, cnn);
+            dataReader = getPlayerNameCmd.ExecuteReader();
+            while (dataReader.Read())
             {
                 try
                 {
-                    player6id = player6idDataReader.GetValue(0).ToString();
+                    playerName = dataReader.GetValue(0).ToString();
                 }
                 catch (Exception ex)
                 {
@@ -330,12 +286,37 @@ namespace MexicanTrain
             }
             cnn.Close();
 
-            //insert player6 score
+            return playerName;
+        }
+
+        public static string GetPlayerIdFromName(string name)
+        {
+            string playerId = "";
+
+            SqlConnection cnn;
+            SqlDataReader dataReader;
+
+            cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
+
             cnn.Open();
-            string insertPlayer6Score = "insert into [Scoring1] (player_ID, score, game_ID) values (" + player6id + ", " + player6score + ", " + gameId + ");";
-            SqlCommand insertPlayer6Cmd = new SqlCommand(insertPlayer6Score, cnn);
-            insertPlayer6Cmd.ExecuteNonQuery();
+            string getPlayerNameQuery = "select player_ID from Players where player_name = '" + name + "';";
+            SqlCommand getPlayerNameCmd = new SqlCommand(getPlayerNameQuery, cnn);
+            dataReader = getPlayerNameCmd.ExecuteReader();
+            while (dataReader.Read())
+            {
+                try
+                {
+                    playerId = dataReader.GetValue(0).ToString();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
             cnn.Close();
+
+
+            return playerId;
         }
     }
 }
