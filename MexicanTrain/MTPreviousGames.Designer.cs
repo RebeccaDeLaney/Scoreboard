@@ -62,14 +62,14 @@
             // 
             this.gameDateLabel.Location = new System.Drawing.Point(500, 150);
             this.gameDateLabel.Name = "gameDateLabel";
-            this.gameDateLabel.Size = new System.Drawing.Size(500, 100);
+            this.gameDateLabel.Size = new System.Drawing.Size(500, 50);
             this.gameDateLabel.TabIndex = 11;
             this.gameDateLabel.Text = "Game Date: XX/XX/XXXX";
             this.gameDateLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // winnerLabel
             // 
-            this.winnerLabel.Location = new System.Drawing.Point(500, 250);
+            this.winnerLabel.Location = new System.Drawing.Point(500, 200);
             this.winnerLabel.Name = "winnerLabel";
             this.winnerLabel.Size = new System.Drawing.Size(500, 50);
             this.winnerLabel.TabIndex = 14;
