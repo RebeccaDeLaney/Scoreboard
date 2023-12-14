@@ -20,6 +20,12 @@ namespace MexicanTrain
             gameDateComboBox.DataSource = gameList;
         }
 
-        
+        private void gameDateComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string gameDate = gameDateComboBox.SelectedValue.ToString();
+            gameDateLabel.Text = "Game Date: " + gameDate;
+            string winner = DB.GetWinner(gameDate);
+            winnerLabel.Text = "Winner: " + winner;
+        }
     }
 }

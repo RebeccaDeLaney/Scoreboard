@@ -41,9 +41,10 @@
             this.gameDateComboBox.FormattingEnabled = true;
             this.gameDateComboBox.Location = new System.Drawing.Point(80, 150);
             this.gameDateComboBox.Name = "gameDateComboBox";
-            this.gameDateComboBox.Size = new System.Drawing.Size(225, 56);
+            this.gameDateComboBox.Size = new System.Drawing.Size(225, 32);
             this.gameDateComboBox.TabIndex = 0;
             this.gameDateComboBox.Text = "Date List";
+            this.gameDateComboBox.SelectedIndexChanged += new System.EventHandler(this.gameDateComboBox_SelectedIndexChanged);
             // 
             // menuButton
             // 
@@ -61,23 +62,23 @@
             // 
             this.gameDateLabel.Location = new System.Drawing.Point(500, 150);
             this.gameDateLabel.Name = "gameDateLabel";
-            this.gameDateLabel.Size = new System.Drawing.Size(500, 40);
+            this.gameDateLabel.Size = new System.Drawing.Size(500, 100);
             this.gameDateLabel.TabIndex = 11;
             this.gameDateLabel.Text = "Game Date: XX/XX/XXXX";
-            this.gameDateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gameDateLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // winnerLabel
             // 
-            this.winnerLabel.Location = new System.Drawing.Point(625, 250);
+            this.winnerLabel.Location = new System.Drawing.Point(500, 250);
             this.winnerLabel.Name = "winnerLabel";
-            this.winnerLabel.Size = new System.Drawing.Size(250, 40);
+            this.winnerLabel.Size = new System.Drawing.Size(500, 50);
             this.winnerLabel.TabIndex = 14;
             this.winnerLabel.Text = "Winner: ";
-            this.winnerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winnerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MTPreviousGames
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(26F, 48F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkSlateGray;

@@ -61,7 +61,7 @@ namespace MexicanTrain
             {
                 try
                 {
-                    game_dateList.Add(((DateTime)dataReader.GetValue(0)).ToLongDateString());
+                    game_dateList.Add(((DateTime)dataReader.GetValue(0)).ToString("yyyy'-'MM'-'dd"));
                 }
                 catch (Exception ex)
                 {
@@ -72,9 +72,44 @@ namespace MexicanTrain
             return game_dateList;
         }
 
-        public string GetWinner(string gameDate)
+        public static string GetWinner(string gameDate)
         {
+            SqlConnection cnn;
+            SqlDataReader dataReader;
 
+            string winner = "unknown";
+
+            cnn = new SqlConnection(CnnHelper.CnnVal("GameMasters"));
+            cnn.Open();
+
+            //string getWinnerQuery = "select Players.player_name from Scoring1" +
+            //    "left join Players on Scoring1.playerID = Players.player_ID" +
+            //    "left join [Game Session] on Scoring1.game_ID = [Game Session].game_ID" +
+            //    "where Scoring1.score in " +
+            //    "((select MIN(score) from Scoring1 left join [Game Session] on Scoring1.game_ID = [Game Session].game_ID where [Game Session].game_date = '" 
+            //    + gameDate + "')) and [Game Session].game_date = '" + gameDate + "';";
+            string getWinnerQuery = "select Players.player_name from Scoring1 " +
+                "left join Players on Scoring1.player_ID=Players.player_ID " +
+                "left join [Game Session] on Scoring1.game_ID=[Game Session].game_ID " +
+                "where dbo.Scoring1.score in " +
+                "((select MIN(score) from Scoring1 left join [Game Session] on Scoring1.game_ID=[Game Session].game_ID where [Game Session].game_date='" + gameDate + "'))" +
+                " and [Game Session].game_date='" + gameDate + "'";
+            SqlCommand getWinnerCmd = new SqlCommand(getWinnerQuery, cnn);
+            dataReader = getWinnerCmd.ExecuteReader();
+            while (dataReader.Read())
+            {
+                try
+                {
+                    winner = dataReader.GetValue(0).ToString();
+                }
+                catch (Exception ex) 
+                { 
+                    Console.WriteLine(ex.Message); 
+                }
+            }
+            cnn.Close();  
+            
+            return winner;
         }
 
         public static void AddPlayer(string player_name)
